@@ -1,0 +1,82 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+login_check:
+  path: /login_check
+  methods: [POST]
+
+api_login_check:
+  path: /api/login_check
+gesdinet_jwt_refresh_token:
+  path:       /token/refresh
+  controller: gesdinet.jwtrefreshtoken::refresh
+
+addingGroupe:
+  path: /api/admin/groupes
+  controller: App\Controller\GroupeController::addGroupes
+
+putingGroupe:
+  path: /api/admin/groupes/{id}
+  controller: App\Controller\GroupeController::putGroupes
+
+DeleteCompetence:
+  path: /api/admin/competences/{id}
+  controller: App\Controller\CompetenceController::DeletCompetence
+
+deletingApprenantGroupe:
+  path: /api/admin/groupes/{idA}/apprenant/{idB}
+  controller: App\Controller\GroupeController::retireApprenantGroupe
+
+AddingChat:
+  path: /api/users/promo/{id}/apprenant/{id1}/chat
+  controller: App\Controller\ChatController::AddNewChat
+
+gettingChat:
+    path: /api/users/promo/{id}/apprenant/{id1}/chat/date
+    controller: App\Controller\ChatController::gettingChat
+
+gettingBrief:
+    path: /api/formateurs/promo/{promo}/groupe/{id}/briefs
+    controller: App\Controller\BriefController::getBrief
+
+putGroupcompetence:
+    path: /api/admin/grpecompetences/{id}
+    controller: App\Controller\GroupeCompetenceController::updateCompetenceId
+
+recuperer_stat_referentiel:
+  path: /api/formateurs/promo/{id}/referentiel/{num}/statistiques/competences
+  controller: App\Controller\LivrablePartielController::RecupApprenantRef
+
+addReferenciel:
+  path: /api/admin/referenciels
+  controller: App\Controller\ReferencielController::AddReferenciel
+
+editReferenciel:
+  path: /api/admin/referenciels/{id}
+  controller: App\Controller\ReferencielController::EditReferenciel
+
+deleteGroupcompetence:
+  path: /api/admin/grpecompetences/{id}
+  controller: App\Controller\GroupeCompetenceController::deleteGrpCompetenceId
+
+deleteReferenciel:
+  path: /api/admin/referenciel/{id}
+  controller: App\Controller\ReferencielController::DeleteReferenciel
+
+editPromo:
+  path: /api/admin/promo/{id}
+  controller: App\Controller\PromoController::EditPromo
+
+deletePromo:
+  path: /api/admin/promos/{id}
+  controller: App\Controller\PromoController::DeletePromo
+
+
+
+addPromo:
+  path: /api/admin/promo
+  controller: App\Controller\PromoController::AddPromo 
+
+SendEmailApp:
+  path: /api/admin/mailer
+  controller: App\Controller\AdminController::SendEmailApprenant 

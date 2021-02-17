@@ -1,0 +1,127 @@
+*****Symfony*********************
+
+1.prérequis
+.PHP 7.1.9 pour utiliser Symfony 4
+.Composer qui est un gestionnaire de librairie,de dependence pour php,disponible sur getcomposer.org
+
+2.mode de creation projet symfony
+NB:symfony est un framework tres puissant
+
+*aller dans votre invite de commande
+*se rendre dans le dossier ou voulez creer le projet
+*taper sur l'invite de commande : composer create-project symfony/website-skeleton nom_du_projet
+update the database:php bin/console doctrine:schema:update --force
+
+
+/*************************************************************************************************************************************************/
+
+pour installer un server pour y lance le projet lors du developpement : composer require server --dev
+
+
+lancer le serveur : php bin/console server:start
+lancer le serveur : php -S 127.0.0.1:8000 -t public
+		  : php bin/console server:run
+
+pour creer un controller: php bin/console make:controller
+pour creer un base de donnee: php bin/console doctrine:database:create
+pour creer un table dans la base de donnee :php bin/console make:entity
+pour valider la creation de la table en base de donnee: php bin/console make:migration 
+et si on veux valider: php bin/console doctrine:migrations:migrate
+
+pour creer des fausse donnees (fixture) on install le composant:composer require orm-fixtures --dev
+puis on tape: php bin/console make:fixtures
+pour executer les fixtures : php bin/console doctrine:fixtures:load
+pour faker: composer require fzaninotto/faker
+
+pour supprimer le cache :php bin/console cache:clear
+
+pour faire la pagination :composer require knplabs/knp-paginator-bundle
+update schema:php bin/console doctrine:schema:update --force
+installer jwt:composer require lexik/jwt-authentication-bundle
+pour vider la base on fait : symfony console app:clean-db
+clef:youngmoney12345
+
+private clef : openssl genpkey -out config/jwt/private.pem -aes256 -algorithm rsa -pkeyopt rsa_keygen_bits:4096
+public :  openssl pkey -in config/jwt/private.pem -out config/jwt/public.pem -pubout
+
+/*******************************DOcker database postgres***********/
+php bin/console make:docker:database
+/******** licence phpstorm **********************************/
+thiernohd.ndiath@uvs.edu.sn
+aerelao1996
+
+/*********** directive fil rouge ********************************/
+fichier voteur pour mla securi
+ 777972806
+les tests fonctionnelle (les entites et les fonctions)
+protocole Http et le mvc
+la poo
+
+/*********Procedure d'installation de la dernier version de composer *******/
+1.  sudo apt install php
+2. sudo apt install curl
+3. curl -Ss https://getcomposer.org/installer | php
+4. sudo mv composer.phar /usr/local/bin/composer
+5. sudo chmod +x /usr/local/bin/composer
+6. composer
+
+***********Procédure installation de Chrome**************************************/
+1. sudo apt update
+2. wget --version
+3. wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+4. sudo dpkg -i google-chrome-stable_current_amd64.deb
+5. google-chrome
+
+/*******************Procedure d'installation de node js version 15 ************/
+1. curl -sL https://deb.nodesource.com/setup_15.x | sudo -E bash -
+2. sudo apt-get install -y nodejs
+
+/********** si apache2 ne fonctionne pas ***************************************/
+1. cd /opt/lampp
+2. sudo ./manager-linux-x64.run
+3. sudo systemctl stop apache2
+
+/*********** Procedure pour regler de probleme du ini************************/
+1. To enable extensions, verify that they are enabled in your .ini files:
+    - /etc/php/7.4/cli/php.ini
+    - /etc/php/7.4/cli/conf.d/10-opcache.ini
+    - /etc/php/7.4/cli/conf.d/10-pdo.ini
+    - /etc/php/7.4/cli/conf.d/20-calendar.ini
+    - /etc/php/7.4/cli/conf.d/20-ctype.ini
+    - /etc/php/7.4/cli/conf.d/20-exif.ini
+    - /etc/php/7.4/cli/conf.d/20-ffi.ini
+    - /etc/php/7.4/cli/conf.d/20-fileinfo.ini
+    - /etc/php/7.4/cli/conf.d/20-ftp.ini
+    - /etc/php/7.4/cli/conf.d/20-gettext.ini
+    - /etc/php/7.4/cli/conf.d/20-iconv.ini
+    - /etc/php/7.4/cli/conf.d/20-json.ini
+    - /etc/php/7.4/cli/conf.d/20-phar.ini
+    - /etc/php/7.4/cli/conf.d/20-posix.ini
+    - /etc/php/7.4/cli/conf.d/20-readline.ini
+    - /etc/php/7.4/cli/conf.d/20-shmop.ini
+    - /etc/php/7.4/cli/conf.d/20-sockets.ini
+    - /etc/php/7.4/cli/conf.d/20-sysvmsg.ini
+    - /etc/php/7.4/cli/conf.d/20-sysvsem.ini
+    - /etc/php/7.4/cli/conf.d/20-sysvshm.ini
+    - /etc/php/7.4/cli/conf.d/20-tokenizer.ini
+You can also run `php --ini` inside terminal to see which files are used by PHP in CLI mode.
+2. la solutio :apt install php-curl php-gd php-intl php-json php-mbstring php-xml php-zip
+3. La solution est trouvée. Pour une raison quelconque, mon composer.jsoncontenu "ext-http": "*" supprime le.
+/*************************Erreur de Extension DOM required ********************/
+1. Extension DOM is required.
+++++++++++SOLUTION: 
+1. sudo apt-get update
+2. sudo apt install php-xml
+3. sudo apt-get install php-mbstring
+
+/**************Eurreur composer update or install******************************/
+1. To enable extensions, verify that they are enabled in your .ini files: - /etc/php/7.4/cli/php.ini - /etc/php/7.4/cli/conf.d/10-opcache.ini - /etc/php/7.4/cli/conf.d/10-pdo.ini - /etc/php/7.4/cli/conf.d/15-xml.ini - /etc/php/7.4/cli/conf.d/20-calendar.ini - /etc/php/7.4/cli/conf.d/20-ctype.ini - /etc/php/7.4/cli/conf.d/20-curl.ini - /etc/php/7.4/cli/conf.d/20-dom.ini - /etc/php/7.4/cli/conf.d/20-exif.ini - /etc/php/7.4/cli/conf.d/20-ffi.ini - /etc/php/7.4/cli/conf.d/20-fileinfo.ini - /etc/php/7.4/cli/conf.d/20-ftp.ini - /etc/php/7.4/cli/conf.d/20-gd.ini - /etc/php/7.4/cli/conf.d/20-gettext.ini - /etc/php/7.4/cli/conf.d/20-iconv.ini - /etc/php/7.4/cli/conf.d/20-intl.ini - /etc/php/7.4/cli/conf.d/20-json.ini - /etc/php/7.4/cli/conf.d/20-mbstring.ini - /etc/php/7.4/cli/conf.d/20-phar.ini - /etc/php/7.4/cli/conf.d/20-posix.ini - /etc/php/7.4/cli/conf.d/20-readline.ini - /etc/php/7.4/cli/conf.d/20-shmop.ini - /etc/php/7.4/cli/conf.d/20-simplexml.ini - /etc/php/7.4/cli/conf.d/20-sockets.ini - /etc/php/7.4/cli/conf.d/20-sysvmsg.ini - /etc/php/7.4/cli/conf.d/20-sysvsem.ini - /etc/php/7.4/cli/conf.d/20-sysvshm.ini - /etc/php/7.4/cli/conf.d/20-tokenizer.ini - /etc/php/7.4/cli/conf.d/20-xmlreader.ini - /etc/php/7.4/cli/conf.d/20-xmlwriter.ini - /etc/php/7.4/cli/conf.d/20-xsl.ini - /etc/php/7.4/cli/conf.d/20-zip.ini You can also run `php --ini` inside terminal to see which files are used by PHP in CLI mode.
+
++++++REPONSE .
+composer update --ignore-platform-reqs
+
+
+/*******In AbstractMySQLDriver.phpAn exception occurred in driver: could not find driver****************************
+
+1. sudo apt-get install php-mysql
+

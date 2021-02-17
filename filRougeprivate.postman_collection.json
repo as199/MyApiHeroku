@@ -1,0 +1,2395 @@
+{
+	"info": {
+		"_postman_id": "3d473a66-2330-4272-8a13-1716015a4fa4",
+		"name": "filRougeprivate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "profil entity",
+			"item": [
+				{
+					"name": "listes des profils",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDYzODMyOTMsImV4cCI6MTYwNjQ2OTY5Mywicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.HeA_JUeWm6Yei53jw7fp3b0r1chAe9bj-ZOBTNrXRpfg2AnN7HeOeQjx7f3JBZgWNjBC9CY3YQlOXIh_ELw-WRXTcd6vLNKBST5bqWrFdXCMW9Y4I6zWYn-5749SQFa-QIsVXvBVzCqc60_844U18K1ICjwLW2v3ex-sgZkS1v4L_8MpijEEMMhx_Ksu7y0Qi8RMNNQfzxbhCdTdME-PTNEe7IzqIyoVzazKD5Ml34-0aa8eExJSUGt52yjStFMQj6fW_TDi0n_gyQnOQvCkbU6-RonvfCT9BRuQ9OiMWkJxumpqcWPJbFLbWqFfqE5KYgRpHUiMGAWqGDO5pdLmvpJ6RgRjhgCLRt807mJUXpXMOMkoTmJclbddxrlJRSssfxMBX98Qof9yTrDsRvy8op6kDloK0SIl6E9mkmx7IHnoejeNHrJiL60Un_QmXeiz1Vr5AVJlvGayvGui-CGxA0Oic4kDkSLe7ddo1Rut0UZ6n0PmfmQge3KVoUbV8wKefrpTIAxeXef7JpjXreZ-Qarjr0Gh8I0oh0V-oEMVzDTQ2fhP7gYLU8I9SifiDUeGYxjjeT18qk0_KxMJdT72JWO8UeMmH1vULBzOeibjnFeyz313DL3NbjoawjUdPkPigzQ73OTpurEdH4_b0Hhc4c_arXOhEZScLYZmlj9BTTI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "status",
+									"value": "1",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/profils",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"profils"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete profil",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDU4NjgzNjUsImV4cCI6MTYwNTk1NDc2NSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.qwbnJUQ4TAf7iyVvslXcVf16814xXdZXt0uNof8uuufXYWpVN4T7jZOr8znOve2E18-1NvGGjgXjCo00CLg2nWqt2PVFB_fp-rAipjJu64fLkaB-y8ZxJU2EQeRlfC-42rHrX81-42TOA4EZUoiwFMT7IiAAmCBZqfhTK2r9PugOBhp4AsMlIpJjq65PdlzkOzTX11UnjPWVjV7x07Ibb9wUUs6qbugnyIyAbisGkX8OyBHRv4uF5i2S8syJjzG3fLzob_mmCpXSiscEi4GFnl6WijZyyfGNj21rIL1M00JkjDaLczB_bEjFejUeLmrmGraNr9XPgCTvqKglM6MKxWLwBGt7EkrXNib10kQBRuptI6x_vdVHdGc0uh9DjYrZlLtUi-t_pKkfyx5tDNuLWAldwvx4P51myTO9GH1KO8VY9U_m9-vVcTxyq8MkHIdJMQc5T3gGXms1zL_J1Tt_FcLmFSVJeWoYXfQiJbNRbAAn69SYVyiFr04yLnDn8u9Mne6KUJdiFRq6UvVAYB2vP0C-eTzuvBOJYCGuWlcpSP9JnT04aIM9DVatHCaqzUwAD0pPKvP0CVqfsSgqkNNP6y2i4rpuXad77DL6wNojr3zftcAWKUbU6CJXhWlc3QPB8p4kM3DxAc5rAd52XBUhahmT7lrkPaPOttWHddPqxgs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/profils/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"profils",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ajouter un profil",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDYzODMyOTMsImV4cCI6MTYwNjQ2OTY5Mywicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.HeA_JUeWm6Yei53jw7fp3b0r1chAe9bj-ZOBTNrXRpfg2AnN7HeOeQjx7f3JBZgWNjBC9CY3YQlOXIh_ELw-WRXTcd6vLNKBST5bqWrFdXCMW9Y4I6zWYn-5749SQFa-QIsVXvBVzCqc60_844U18K1ICjwLW2v3ex-sgZkS1v4L_8MpijEEMMhx_Ksu7y0Qi8RMNNQfzxbhCdTdME-PTNEe7IzqIyoVzazKD5Ml34-0aa8eExJSUGt52yjStFMQj6fW_TDi0n_gyQnOQvCkbU6-RonvfCT9BRuQ9OiMWkJxumpqcWPJbFLbWqFfqE5KYgRpHUiMGAWqGDO5pdLmvpJ6RgRjhgCLRt807mJUXpXMOMkoTmJclbddxrlJRSssfxMBX98Qof9yTrDsRvy8op6kDloK0SIl6E9mkmx7IHnoejeNHrJiL60Un_QmXeiz1Vr5AVJlvGayvGui-CGxA0Oic4kDkSLe7ddo1Rut0UZ6n0PmfmQge3KVoUbV8wKefrpTIAxeXef7JpjXreZ-Qarjr0Gh8I0oh0V-oEMVzDTQ2fhP7gYLU8I9SifiDUeGYxjjeT18qk0_KxMJdT72JWO8UeMmH1vULBzOeibjnFeyz313DL3NbjoawjUdPkPigzQ73OTpurEdH4_b0Hhc4c_arXOhEZScLYZmlj9BTTI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"libelle\": \"Adminh\"\n  \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/profils",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"profils"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifier un profil",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDYyMzI5NzcsImV4cCI6MTYwNjMxOTM3Nywicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.YYU-B1DYm_T1A0rfKB2FLTNfbD-dR6DzLq1kCtTP9QHpXnx4UezxRr5kDACk5J_yMer9sgfoltLjWLRCUj60ppgpBddjfE6AtUUsSjZtqEs7aMzlXeJ9vrHN3SA_B-7WZmiYzgXB2V7SjqHM6ZMcyl_gZvFAgS2L02edn0TfteLIFWkCtPDXxkVjj6AK-P3G2rz3WCnIcJE_uPvVqFeXqC6_1NenDigU7FL0vbqD45J37EEIUdpBH5UPAtVTJAc3N3wq-vG6aljSCVlmKY-oVwNBpWT3iSrsTSR6KhXP7jUm3OLHj_tRH8FaZZV-NYTGB-Q0ED_3v09245z4tP19jXuvripf0FFY4s30VPynMiAsFIQc-8Qi0L416cF6DVEQS0rCOYwTvSPRH0L4lRJB86oPk7gYXW1mU_Q3S9X7ucP1f0VSOq3ib0FzZuUSMgYQs-GdoSY1txIJN0Qd3Q6ZV76E8KGFflEhBLIstggpo3cX6C7OK1p42UM64qsrRJhOUCyUGgS7zWxNyIqlR4FgV_5_COIMAKXVluQ-utWw8N7SY2Qb-tfwOg2d7Um-b81mzRbFs_zYCETZYDeH8xBm8aV8xmklGeodxeCf4lFj1ovH6OQKRcKD4PhmydeVQUlM1SnGKG7-KNm_b1DThw_R0YDU4j6k-Y095td_5-xGLuw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\n  {\n    \"libelle\":\"pol\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/profils/7",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"profils",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "afficher un profil donnée",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDYyMTczMDcsImV4cCI6MTYwNjMwMzcwNywicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.cL3FaKlItqhBhbeVRb7VAYQXtI0kQG9MggpxwUVzbQMu8wNtmi07Xm3dS5jDm5vWqIyciP0WH-KZz9FiE-ksnQO6MMwr4bROoy8y2-jD-EZyryAWD-tr0m2P5u5OQS2uhA2b8eF8Pd-3FxCmI8-kA41dfSyZMqTqhKYjLEm3MU8n3ZN94IhnWSPyI2Zxs1ONa2TBfPcVzVK5tI1QP9uFfpDWHzVxG73Ut69jlHtKM0otNy1b-xw03O9LW-acla_fCwnxZEuNIgP_mf6kgKGtoDQ-wEC-p7I61bc7apk7AeBcV68L-UJGiCwO_5KcWwda5eTYgGVD2s9k0zgYdkPeUr_vG3iES1rLFp2KDXXEj5UcLW0jei3ba0i0RLs6eTjA95jl-EkfXGFZBYZq_XwsTucdgxmJG9141-yxWOf8Qa0-wI4JpTL_wgJDUdzlD--SsswTg8on3phyY2wfRmjqgpItfCrSsllafL5DG4HbwfQC1grXvDH2Y7k1lrrnUcDbzJeDEOrnO7C6ocokqy1QYLv0GtJJINhnracOcVcQpACwGMrP7zT2z1treU52d7s3SG67S96QMhZFUjty4iBX--yIBgMc4qtiLFwWwyDyAkO38mKly-vgP_sRIGa40uIHjOsCOM_zVAHcOn70mVJ5HYQBtFpPorLJ_vta5o5XhtE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/profils/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"profils",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Token",
+			"item": [
+				{
+					"name": "generate token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"admin1\",\n    \"password\":\"pass1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/login_check",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"login_check"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Admin user",
+			"item": [
+				{
+					"name": "add admin user",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MjYxMDksImV4cCI6MTYwNzA4NTMwOSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WD1tEmIPQIWvUYb4_77wuvHn31JtFbBtlQUybcnPSnMpIESgQHAZzgmxUTI3yzEzluTRxL-slXlHTqZTpb0OE7MlQJLD_UhDjCkIEHDAJwyJXjgXszAvX7XX5MRJOmU3_PLaZn19falNkUwgtaw8KoIcm_9FbFhDC_Hobaoidonx-YtcmR7H2Tetc0nNMtC1B6MspTQOtQfB0RIBezn6Gz1xfpo4I3Ed-97n-onJ9_ljcPvjPCnVr7nLjGRKnkw2m95NTkoj-RNPiopFVEPdext_FCWTF2CtrBFtL3HrqEiZ4E8MwHBHyBh4b2BO23zQiIOFjWUg0K_bFXVo_fZmVmyRhDAbus-u2rau6HAp45dUs0AXFUXexOhM74RiaT-MT7FWOiUMFqlqdo6V6CIZjzgmn9CW14INH6N9IvjGSQudc8lqpgXvofX1UwkdzonVTC1Tn8B3CYmdgbM1R1WvGUhCABvkgan2i2DtDhxVnmJysdkpw57iapZpb-3ZsG79LM3yau0NTg1vfmhI5d9zTRaisz-hDGWu_OcoDdT8UQobzcpI4SadIfL7sNBLmDO9dmCQS1RGMhf-KhpE7CNemV94VkWvmGIS3ugNLk_vIccWBGPonXegvuF9efYmaoU-1uLrtVPbIF5_B4KO6JkgG0DRAh3klc2bY9gzm97URQU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "Dsms",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "pass12345",
+									"type": "text"
+								},
+								{
+									"key": "nomComplete",
+									"value": "sms p",
+									"type": "text"
+								},
+								{
+									"key": "adresse",
+									"value": "Dakard",
+									"type": "text"
+								},
+								{
+									"key": "telephone",
+									"value": "7632125254",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "dame2125@ecvdv.com",
+									"type": "text"
+								},
+								{
+									"key": "avartar",
+									"type": "file",
+									"src": "/home/atpro/Images/Capture d’écran de 2020-11-21 13-54-18.png"
+								},
+								{
+									"key": "genre",
+									"value": "male",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Apprenant",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "select user by admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDYzODMyOTMsImV4cCI6MTYwNjQ2OTY5Mywicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.HeA_JUeWm6Yei53jw7fp3b0r1chAe9bj-ZOBTNrXRpfg2AnN7HeOeQjx7f3JBZgWNjBC9CY3YQlOXIh_ELw-WRXTcd6vLNKBST5bqWrFdXCMW9Y4I6zWYn-5749SQFa-QIsVXvBVzCqc60_844U18K1ICjwLW2v3ex-sgZkS1v4L_8MpijEEMMhx_Ksu7y0Qi8RMNNQfzxbhCdTdME-PTNEe7IzqIyoVzazKD5Ml34-0aa8eExJSUGt52yjStFMQj6fW_TDi0n_gyQnOQvCkbU6-RonvfCT9BRuQ9OiMWkJxumpqcWPJbFLbWqFfqE5KYgRpHUiMGAWqGDO5pdLmvpJ6RgRjhgCLRt807mJUXpXMOMkoTmJclbddxrlJRSssfxMBX98Qof9yTrDsRvy8op6kDloK0SIl6E9mkmx7IHnoejeNHrJiL60Un_QmXeiz1Vr5AVJlvGayvGui-CGxA0Oic4kDkSLe7ddo1Rut0UZ6n0PmfmQge3KVoUbV8wKefrpTIAxeXef7JpjXreZ-Qarjr0Gh8I0oh0V-oEMVzDTQ2fhP7gYLU8I9SifiDUeGYxjjeT18qk0_KxMJdT72JWO8UeMmH1vULBzOeibjnFeyz313DL3NbjoawjUdPkPigzQ73OTpurEdH4_b0Hhc4c_arXOhEZScLYZmlj9BTTI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/users/55",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"users",
+								"55"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Apprenant User",
+			"item": [
+				{
+					"name": "lister tous les apprenants",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDU3MzA5NDcsImV4cCI6MTYwNTczNDU0Nywicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.VcI6xLq3yezpfPNGPa-ECUloKOlnTJ9I5AKLoQjDQOI7M2T2Gl9X65Rg2TlOjIUNTeVGkDR7Vo22CNB8QTZiMk8O8MhKOLg_cy5zdbGFepyA4Zj7SRp21XhFC5sjCxCNwCfnOxD62ewfx7YYH3V-j-qYE1erqv0RqY2z4KxQYxfxPVlRfVSPCwDRMNLE1VVQ-GAoSjDfsR3JwqlPapRIT6w7wQ98WArvOeEQIagD4fgQkcBQQaTDji_gdSWM_-DmxTnb7oedwapXMa1hHo6f7xFWbC5UQ6ltZy7yngL4Z_n__5Xzzl6R7g2NeHkbvBIAMAoSuS5CUlta8sM5GypfawEwQFDSAS1awA8b1Q-0JPHoggCHzhdZiQJ9x20cZxsewAN3UTb8j6l_H6BaryXcGjod4cpnfqrSZc827aX5LunaEttjf2bEuz9OJ5VV6giXU6ydVROdMtl67rhI5kEqFqsq7mBftm4NcI0J8Mgo0XNpwspamMFf_5X4xlg8FGihaVdAs617VfFwh7psgZDRFT0SLB9DvsEWsQHuk2jJrz0GSNxlHBiabB_2r7Eh35ELb0U7JYJDsX3-QPRdaBJWcPnsMcilB_pz8WY_l5KQ2E4O_XP4KjOVvQ39YevqbNjAl3S86h2xDerHwBj5MkbBZ58bTAxRZV4CTeEyNy7YlVA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/apprenants",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"apprenants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "select apprenant by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDU3NzQwMjUsImV4cCI6MTYwNTc3NzYyNSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.hVXO2HVPCFdXg9KkPPlyqW3yQJRgySNbg6ydt2Qq2n9zXzY52QyZ8d7ydg5y50fWEMvuf4plLF_p0aDDdXdeljYwOC08asj0QQai0Xyf6YwZlIeST90eSyPwRdhhU4a9pVnUST6h5f0ze6WtcpP3Ye5RvX99w_5Toi1g5t7Q_q6G1i6rbIieC1CCnSizadbSAn5JOejLWZt9qj3czKWaO4SD_XA7qFnDw0t2tDXsQHlDro6KVOOT-OxFjj8EXQ1tVyIAjxFG-TDww-rc-EdAPfYv6ZyGhJ-i01HvIbJMMD4J6HlUhpjlNsy3Y0evHcdQnin8hALVlxzp71AoPRig_XhwhJggThjqrTpXG-_bF11MYxyHPiefML8fSEqH-cgaHBYZqrC8BpJzcjPYpb4os5xO7oyCFG8cZZFlVB0BtjgwcfUCwrVEesPJmwY0ODwB0DoYNwlGpusqOqKfTfc_PfAIp9KWofZ6SLbZMhx8DJaNDPnMuxILVSINfYwGo5uOf8osim9VOxtDoyIesjm_3Pb9G60IAMSdhgI020NZRbXD9OoXEgIeEUusb39mtG-_1ni9OVffOkp6Llpfy8eWJGkhk23AhlodNc98MpruvXf3mTJgFgupZXEg9sCspRf2J3koZ3q57SS25ALSsCID_Q7jINNcj0RADeg0gTr0RDY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/apprenants/45",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"apprenants",
+								"45"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update apprenant by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDYxMTYwMDAsImV4cCI6MTYwNjIwMjQwMCwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.1DCbyZ46B-NhVMhqBChwcIKLClEo1ZTeQPciaNR9szVPmiHFvvc_QX3jxR_wxa9qWk1SzXjqQ0OjXnY_Qj_V14d1LtutnFuH0mL_hD9y5svT1fR-MJVDRZ4zHzUn431U25G_AtpgQOAZhGAhNGK7-u1XfP5Dyc_-oz3-GLJxKn80RgQaYdqkgiM6IARz19fG_wruCavBGFkdGgeRjYVUtJlgqUAsf0U3178lXh9rupcaCsf3W1KTr3BfOahaqbp49XDsZg_OxKF7l22E4Za2PA9dqoo57eQoJC89RvgIsmpZkWIQG0clrhxrUR7uYz2VacGE1HZ1RK8KaF49QuPqYU1HTlSG_FEyoG7ZLhNP1n1EdkRuXS3ohEK969B7lSmCjbK2gC7Bk-Knaj_eKMYCzNKyn-PGA-4OIoS9ORYcGRnKfndymOJdz6yL1clcu359dxhsD8kEjAALBUG_Iafpv-T04Y_pG0iVt5ZNyYEhljipYYNUIJx4elmM6DG4yiqrq_5rGlZFZ33uc6wLhvA3xB6bT2w1CdeJgyf43CALHCvym3MI7Bb9kqZA2itky9bhxI_jaRPnXdwufktcB8_QdMNtHfDoQk6ORXyYLwavbQ6-d99yLlIt8CnVbeuEEwuSPARojq4j6x7Pk_uGM4ly1aB1ehmALdVBI-nGSsqUg4I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "avartar",
+									"type": "file",
+									"src": "/home/atpro/Images/Capture d’écran de 2020-11-18 17-21-54.png"
+								},
+								{
+									"key": "email",
+									"value": "test@gmail.com",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/apprenants/6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"apprenants",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Formateur uuser",
+			"item": [
+				{
+					"name": "selectformateur by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDU3ODc3NDQsImV4cCI6MTYwNTc5MTM0NCwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.fgqaeDUYWvuSwM1oWIVXYV86uAutZvNSdA_BPmqbs05T-LNOJO2tby_Bg7QtNo6mJk0IDaNsx-PYc09MW6Myvspxa-cD8ZA4WHSh84J7cgUAEeGQE54BLvo_6gnmvBjTCvRRB34Ddtu0C13RWLVWseVps3zSlibxPDPUFDuD7a30eSkrOiM_HayMBevuTY1LPkeL048oNYfVNYOgBSTtw2_PyI8VwflascjUDYt1i79MJNjs6tqYcYfsLZzZG4es4kfTQBPAPu750HEvedSoHckvkvrECNNiQNvMYWHl-XkU1elO50YUsCViVoMw5AHhwhkwZL8VyDwluPrFbIoGDEi6_FiPIweaOeoSV5wt3nKABTLMIV7JWq9daBSOMm7as5SC3BI0V9NQSlXiEn8UajtR7WKLoyM4XSVdMYyXQg4Ek4hIqzdyA1-irjesUaOhCdqEZ4n7Ij8lth_L7dbg1UbCccZh5i-vCt7KMFZgQFRDff_2UN4w7S_b0PKUAqcHW8PiEkeOd1cmGiASSXFWBn1mcWo4bahlVKT_wCVTksL-PACwN6_HRhmvjZplF0D14PfD9joBgHSG46kYWBkusqi_nGt-3jS6TSxczgjtva9ffZaB80uFFt3zqgFdxglwxzDMb4sAZc77VX5G-wsQpDms1ZmtoYETgQnIiOmKsZs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/formateurs/10",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"formateurs",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update formateur by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDU3ODc3NDQsImV4cCI6MTYwNTc5MTM0NCwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.fgqaeDUYWvuSwM1oWIVXYV86uAutZvNSdA_BPmqbs05T-LNOJO2tby_Bg7QtNo6mJk0IDaNsx-PYc09MW6Myvspxa-cD8ZA4WHSh84J7cgUAEeGQE54BLvo_6gnmvBjTCvRRB34Ddtu0C13RWLVWseVps3zSlibxPDPUFDuD7a30eSkrOiM_HayMBevuTY1LPkeL048oNYfVNYOgBSTtw2_PyI8VwflascjUDYt1i79MJNjs6tqYcYfsLZzZG4es4kfTQBPAPu750HEvedSoHckvkvrECNNiQNvMYWHl-XkU1elO50YUsCViVoMw5AHhwhkwZL8VyDwluPrFbIoGDEi6_FiPIweaOeoSV5wt3nKABTLMIV7JWq9daBSOMm7as5SC3BI0V9NQSlXiEn8UajtR7WKLoyM4XSVdMYyXQg4Ek4hIqzdyA1-irjesUaOhCdqEZ4n7Ij8lth_L7dbg1UbCccZh5i-vCt7KMFZgQFRDff_2UN4w7S_b0PKUAqcHW8PiEkeOd1cmGiASSXFWBn1mcWo4bahlVKT_wCVTksL-PACwN6_HRhmvjZplF0D14PfD9joBgHSG46kYWBkusqi_nGt-3jS6TSxczgjtva9ffZaB80uFFt3zqgFdxglwxzDMb4sAZc77VX5G-wsQpDms1ZmtoYETgQnIiOmKsZs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"22@test.com\",\n    \"nomComplete\":\"ALY Niang\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/formateurs/10",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"formateurs",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "lister les users d'un profil donnée",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDU3NzI2NzMsImV4cCI6MTYwNTc3NjI3Mywicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.m0glxYP2R-wXTpk7kBPoMtqTfcRbNAzgAo7AqoMCfNPoXV4TzelPsFsqcGwEjZlJUyR2fb3R77Wuphq3UAKCy54sVTNSjNhO_MFQPzy0n8a2P59UKYSJY1Q1jV9KpyU1rng-DF_iaZYQsrKXWnT7mvjVxU-sYS-jgRn2rJspWXs14Q0GOGDTgkVROWZGgHDm3JikvEStrqgx3xrXZQceyzp-CDf46KXICF9W0eifMgcnAJE7t9bA4S6xJzg7t6ada185vJDVVY_Nrtja5Sud1ESDqUnUCL309AU-wLYXTKYLmD55uZE1nP2qs01gB1-QegUY8nE5VG-Q6_yx1NPuPINit67uBWkozV6rb7o3txu3i-sJ9Nm6-zS9SFszjbbY0hO9dEbEmmXdcHDcwCtXb-pe6bS4JyDURLIDkKXtH-_JMIZFXJxLUSj2tQORReR3WpFnBlac0DQjmDTlwsoyiCcel7azFgtMLcB6p1ZAPYop2wdzOu5soFDuwjP1nNkzFhwRVUYp7lqSvNxecIDbIAaLu4pv1NcgeIuqZvfj259C6L4q0QcljJ48d2H6fDnQZM72qTYSPTAgYNPqUpj8JHZ9BJ15gqRjvpB35XbWnztMCX19e7CGZR3QHH_hvA6FOy19scd4NbyEjV0FaBH-HZ2i23F8jeZmNFAo_WFDRTA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/profils/27/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"profils",
+								"27",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lister tous les users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDYzODMyOTMsImV4cCI6MTYwNjQ2OTY5Mywicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.HeA_JUeWm6Yei53jw7fp3b0r1chAe9bj-ZOBTNrXRpfg2AnN7HeOeQjx7f3JBZgWNjBC9CY3YQlOXIh_ELw-WRXTcd6vLNKBST5bqWrFdXCMW9Y4I6zWYn-5749SQFa-QIsVXvBVzCqc60_844U18K1ICjwLW2v3ex-sgZkS1v4L_8MpijEEMMhx_Ksu7y0Qi8RMNNQfzxbhCdTdME-PTNEe7IzqIyoVzazKD5Ml34-0aa8eExJSUGt52yjStFMQj6fW_TDi0n_gyQnOQvCkbU6-RonvfCT9BRuQ9OiMWkJxumpqcWPJbFLbWqFfqE5KYgRpHUiMGAWqGDO5pdLmvpJ6RgRjhgCLRt807mJUXpXMOMkoTmJclbddxrlJRSssfxMBX98Qof9yTrDsRvy8op6kDloK0SIl6E9mkmx7IHnoejeNHrJiL60Un_QmXeiz1Vr5AVJlvGayvGui-CGxA0Oic4kDkSLe7ddo1Rut0UZ6n0PmfmQge3KVoUbV8wKefrpTIAxeXef7JpjXreZ-Qarjr0Gh8I0oh0V-oEMVzDTQ2fhP7gYLU8I9SifiDUeGYxjjeT18qk0_KxMJdT72JWO8UeMmH1vULBzOeibjnFeyz313DL3NbjoawjUdPkPigzQ73OTpurEdH4_b0Hhc4c_arXOhEZScLYZmlj9BTTI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDYyODk3MTIsImV4cCI6MTYwNjM3NjExMiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.aZ7cc0B_-5MBh_eKVVe6mPnBAcK9DnXj59gKqp10P2RV0rl4HyLUf23-uzYj42JFgwlrzrVzXlgMTTnCTbbYOfdwNfSAKXcQZe1TdiH5KQijcYbAPwwC8jWQUOLCKNEa4swqyFM5dYFYw5tOkPN9dJf9cYfWqKhiwh6cTTLj127DYJbH3ZVsoD_HywsI7BOCBQLE-qXIKpGGBbdQK8yGZjLK33PG5J8CGB75rqZF6QrweyUhm32LLU3CX_S7iA2cb8sUHPZH9IiXcaKDmGNgISi_d5DoFcQjeyUPUPy5nWm261rShBwGN-WvubVWpGgpJ_l9VQ5UpwqvTciXu-cfQciwALa-CHDZGvq7b-gPLJ9GpzBn0vqp4dyrJbefv_-ErnexYgubbtPFdqp1aG622I7IJm9VkFf6I_bBEhqEUp3zBuQjl387AZ_mLiPwIw54m1x-xRV1TfAf4WhCDMRKtvZiyS31l1b4mrRJFoULC45ZgA0GpvpAeVgyGlTYu9Z39Y9fxo6hrAtrvUpOWvCnPCFwF4HnCfazUoVjBxUo9fsS6SD5TSzNw7VxO3l5B8DiTvzp5f7NtZmvqUV26cMa0K5KwivDBb8f0zRXXT3js9ZQdxAGZwzLrRe-_9oyltkpDs1YBilv5LdP-sFS424xKQc7cmR1ZXaVDq8MJqZYcWA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "tres@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "avartar",
+									"type": "file",
+									"src": "/home/atpro/Images/Capture d’écran de 2020-11-24 11-39-49.png"
+								},
+								{
+									"key": "profil",
+									"value": "Admin",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "hyuiy@gmial.com",
+									"type": "text"
+								}
+							],
+							"options": {
+								"formdata": {}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/users/12",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"users",
+								"12"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Competence",
+			"item": [
+				{
+					"name": "afficher un competence",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDYyMDc3MTksImV4cCI6MTYwNjI5NDExOSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.RFJDPGNl4wtDm6gSNTpGqd2bTip9afJKUYaimNZoIgYYMi0WaNG8pYlXIGJQ7UPseA427nVxHGjPRl7J85Odm3TDYs-4wm2qGdpA1Euqj4TTkUuwofFXF9LVMgl5FTzuvufjEck1pUyY71w6Fn-hjzYldkaInBuUOZvh2zHwvA8APHmu8yyv8_j7Hp0fKl2RKIr8np9cLLOAf2mD1_uAOw2RG21GoNLV4RjrOB9Sh_aS4WZPvkRaezXJHO2LDHG3mGRzABc8ORC6q6sUuXZiP0JP7CC9hspFOrCOGfZ5yp6UWe8RGVUwhNOYnPKUtTZdICSk5ByL8Pz7JPQ4rIcWfOUty178wVpJUqIWHyf64DfEhqLBBqZtrJ4gfBeuSbpQzDdPgs-Hj-x52kApSEVd1flUe-p_-R44s4jP3efLKTvx-ACa1E9K_024PoETHaCv4M1NAqfGK2cW8cxUg82yX9ZhLvSJfCJTm2EbkbXKRSJGoa_iy3TmhOCLUL9bdQGVzAXQs64GbFO8d9CRyvdf5d_DgZN1rKH9OzjGqGHYJbx3jMgFnSUm789s8PN0TR2E9pWTPXY2fYu3cmYG6odvFyztae1blj3ftndSZJrX1OxRYeIRkXGT8GrwzgaP4QgYbFt3qym_vMyDxI1eOZcwk54j-2-XOUWCby6B3xxS208",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/competences/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"competences",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "afficher tous les competences",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDYyMDc3MTksImV4cCI6MTYwNjI5NDExOSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.RFJDPGNl4wtDm6gSNTpGqd2bTip9afJKUYaimNZoIgYYMi0WaNG8pYlXIGJQ7UPseA427nVxHGjPRl7J85Odm3TDYs-4wm2qGdpA1Euqj4TTkUuwofFXF9LVMgl5FTzuvufjEck1pUyY71w6Fn-hjzYldkaInBuUOZvh2zHwvA8APHmu8yyv8_j7Hp0fKl2RKIr8np9cLLOAf2mD1_uAOw2RG21GoNLV4RjrOB9Sh_aS4WZPvkRaezXJHO2LDHG3mGRzABc8ORC6q6sUuXZiP0JP7CC9hspFOrCOGfZ5yp6UWe8RGVUwhNOYnPKUtTZdICSk5ByL8Pz7JPQ4rIcWfOUty178wVpJUqIWHyf64DfEhqLBBqZtrJ4gfBeuSbpQzDdPgs-Hj-x52kApSEVd1flUe-p_-R44s4jP3efLKTvx-ACa1E9K_024PoETHaCv4M1NAqfGK2cW8cxUg82yX9ZhLvSJfCJTm2EbkbXKRSJGoa_iy3TmhOCLUL9bdQGVzAXQs64GbFO8d9CRyvdf5d_DgZN1rKH9OzjGqGHYJbx3jMgFnSUm789s8PN0TR2E9pWTPXY2fYu3cmYG6odvFyztae1blj3ftndSZJrX1OxRYeIRkXGT8GrwzgaP4QgYbFt3qym_vMyDxI1eOZcwk54j-2-XOUWCby6B3xxS208",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/competences",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"competences"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listes des competence d'un groupe",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDYyODk3MTIsImV4cCI6MTYwNjM3NjExMiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.aZ7cc0B_-5MBh_eKVVe6mPnBAcK9DnXj59gKqp10P2RV0rl4HyLUf23-uzYj42JFgwlrzrVzXlgMTTnCTbbYOfdwNfSAKXcQZe1TdiH5KQijcYbAPwwC8jWQUOLCKNEa4swqyFM5dYFYw5tOkPN9dJf9cYfWqKhiwh6cTTLj127DYJbH3ZVsoD_HywsI7BOCBQLE-qXIKpGGBbdQK8yGZjLK33PG5J8CGB75rqZF6QrweyUhm32LLU3CX_S7iA2cb8sUHPZH9IiXcaKDmGNgISi_d5DoFcQjeyUPUPy5nWm261rShBwGN-WvubVWpGgpJ_l9VQ5UpwqvTciXu-cfQciwALa-CHDZGvq7b-gPLJ9GpzBn0vqp4dyrJbefv_-ErnexYgubbtPFdqp1aG622I7IJm9VkFf6I_bBEhqEUp3zBuQjl387AZ_mLiPwIw54m1x-xRV1TfAf4WhCDMRKtvZiyS31l1b4mrRJFoULC45ZgA0GpvpAeVgyGlTYu9Z39Y9fxo6hrAtrvUpOWvCnPCFwF4HnCfazUoVjBxUo9fsS6SD5TSzNw7VxO3l5B8DiTvzp5f7NtZmvqUV26cMa0K5KwivDBb8f0zRXXT3js9ZQdxAGZwzLrRe-_9oyltkpDs1YBilv5LdP-sFS424xKQc7cmR1ZXaVDq8MJqZYcWA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/grpecompetences/competences",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"grpecompetences",
+								"competences"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lister les competences d'un groupe de competence",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDYzODMyOTMsImV4cCI6MTYwNjQ2OTY5Mywicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.HeA_JUeWm6Yei53jw7fp3b0r1chAe9bj-ZOBTNrXRpfg2AnN7HeOeQjx7f3JBZgWNjBC9CY3YQlOXIh_ELw-WRXTcd6vLNKBST5bqWrFdXCMW9Y4I6zWYn-5749SQFa-QIsVXvBVzCqc60_844U18K1ICjwLW2v3ex-sgZkS1v4L_8MpijEEMMhx_Ksu7y0Qi8RMNNQfzxbhCdTdME-PTNEe7IzqIyoVzazKD5Ml34-0aa8eExJSUGt52yjStFMQj6fW_TDi0n_gyQnOQvCkbU6-RonvfCT9BRuQ9OiMWkJxumpqcWPJbFLbWqFfqE5KYgRpHUiMGAWqGDO5pdLmvpJ6RgRjhgCLRt807mJUXpXMOMkoTmJclbddxrlJRSssfxMBX98Qof9yTrDsRvy8op6kDloK0SIl6E9mkmx7IHnoejeNHrJiL60Un_QmXeiz1Vr5AVJlvGayvGui-CGxA0Oic4kDkSLe7ddo1Rut0UZ6n0PmfmQge3KVoUbV8wKefrpTIAxeXef7JpjXreZ-Qarjr0Gh8I0oh0V-oEMVzDTQ2fhP7gYLU8I9SifiDUeGYxjjeT18qk0_KxMJdT72JWO8UeMmH1vULBzOeibjnFeyz313DL3NbjoawjUdPkPigzQ73OTpurEdH4_b0Hhc4c_arXOhEZScLYZmlj9BTTI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/grpecompetences/7/competences",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"grpecompetences",
+								"7",
+								"competences"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ajouter un compétence",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY3MzQ5MDIsImV4cCI6MTYwNjk5NDEwMiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.fdTb_Wuz9xLIMFul71GCLH3UeH_Iarq9sXA9us37CgdvSpYfErES5vQ65kPDxJueMVkaYVHNRDZkgcSdU-UdTbm1LThCn3pinS6ibJgeZM9DCaJrmObBsxxa1Lj00QuRIMz4GdiXcie1WYfK2mVLVy-bSN5z15k3_3LR5IT66y8f2qUeU6LE1z6v9-6OxchiIJSn7ydNOhd8ehaoTX_573abFXnievxjvrJYz35CJKZ2kr8B-xZKwmdAb4GoauiMWvJhsFi-x0vLyOGzl-I0BvsAjocszMCWvsmT9Pr_qPlovToLiBQshRVwoYhsXC78sozgAbNiymyBHxcpx6RJBoii4o9HukKSIMi1AnUZbC93mngofMCkGOdxuc4EWuwb7xu0FQcRXUo8pn6qcgdrocKLhZw25ecgA_CnDNgsBK0Yh9I_EPjPnXLdNlNwtIU2R1ZGbQGxxgP4U9bQmPgRap-w0VZj2Ik6vEy9fDuvkpKA4UXaeF5b_j6OLo6HhITIYYZ2NRhSHB_AruZDqh9c7SJFFZmej4mV-Nq6Wd4Zvw-hKF_XtoNL_T3o43oI38ZO9ngDMtWbLVV_EbW4dtG7TWGzfgD0sJIzDPTqGWnjECSo7hhgXbCSFe7ic6V1c4FTIoW7u_ilHKl9vvRcKuE7MYwTJsuTfOBneN6_sLjfMVI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"libelle\": \"api competence\",\n  \"status\": false,\n  \"niveau\": [\n    {\n      \"libelle\": \"api libelle1\",\n      \"critereEvalution\": \"api critere api\",\n      \"groupeAction\": \"tttttttt\",\n      \"status\": false\n    },{\n      \"libelle\": \"api libelle1\",\n      \"critereEvalution\": \"api critere api\",\n      \"groupeAction\": \"tttttttt\",\n      \"status\": false\n    },{\n      \"libelle\": \"api libelle2\",\n      \"critereEvalution\": \"api critere api\",\n      \"groupeAction\": \"tttttttt\",\n      \"status\": false\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/competences",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"competences"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lister les competences",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDYyODk3MTIsImV4cCI6MTYwNjM3NjExMiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.aZ7cc0B_-5MBh_eKVVe6mPnBAcK9DnXj59gKqp10P2RV0rl4HyLUf23-uzYj42JFgwlrzrVzXlgMTTnCTbbYOfdwNfSAKXcQZe1TdiH5KQijcYbAPwwC8jWQUOLCKNEa4swqyFM5dYFYw5tOkPN9dJf9cYfWqKhiwh6cTTLj127DYJbH3ZVsoD_HywsI7BOCBQLE-qXIKpGGBbdQK8yGZjLK33PG5J8CGB75rqZF6QrweyUhm32LLU3CX_S7iA2cb8sUHPZH9IiXcaKDmGNgISi_d5DoFcQjeyUPUPy5nWm261rShBwGN-WvubVWpGgpJ_l9VQ5UpwqvTciXu-cfQciwALa-CHDZGvq7b-gPLJ9GpzBn0vqp4dyrJbefv_-ErnexYgubbtPFdqp1aG622I7IJm9VkFf6I_bBEhqEUp3zBuQjl387AZ_mLiPwIw54m1x-xRV1TfAf4WhCDMRKtvZiyS31l1b4mrRJFoULC45ZgA0GpvpAeVgyGlTYu9Z39Y9fxo6hrAtrvUpOWvCnPCFwF4HnCfazUoVjBxUo9fsS6SD5TSzNw7VxO3l5B8DiTvzp5f7NtZmvqUV26cMa0K5KwivDBb8f0zRXXT3js9ZQdxAGZwzLrRe-_9oyltkpDs1YBilv5LdP-sFS424xKQc7cmR1ZXaVDq8MJqZYcWA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/competences",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"competences"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lister un competence",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDYyODk3MTIsImV4cCI6MTYwNjM3NjExMiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.aZ7cc0B_-5MBh_eKVVe6mPnBAcK9DnXj59gKqp10P2RV0rl4HyLUf23-uzYj42JFgwlrzrVzXlgMTTnCTbbYOfdwNfSAKXcQZe1TdiH5KQijcYbAPwwC8jWQUOLCKNEa4swqyFM5dYFYw5tOkPN9dJf9cYfWqKhiwh6cTTLj127DYJbH3ZVsoD_HywsI7BOCBQLE-qXIKpGGBbdQK8yGZjLK33PG5J8CGB75rqZF6QrweyUhm32LLU3CX_S7iA2cb8sUHPZH9IiXcaKDmGNgISi_d5DoFcQjeyUPUPy5nWm261rShBwGN-WvubVWpGgpJ_l9VQ5UpwqvTciXu-cfQciwALa-CHDZGvq7b-gPLJ9GpzBn0vqp4dyrJbefv_-ErnexYgubbtPFdqp1aG622I7IJm9VkFf6I_bBEhqEUp3zBuQjl387AZ_mLiPwIw54m1x-xRV1TfAf4WhCDMRKtvZiyS31l1b4mrRJFoULC45ZgA0GpvpAeVgyGlTYu9Z39Y9fxo6hrAtrvUpOWvCnPCFwF4HnCfazUoVjBxUo9fsS6SD5TSzNw7VxO3l5B8DiTvzp5f7NtZmvqUV26cMa0K5KwivDBb8f0zRXXT3js9ZQdxAGZwzLrRe-_9oyltkpDs1YBilv5LdP-sFS424xKQc7cmR1ZXaVDq8MJqZYcWA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/competences/44",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"competences",
+								"44"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifier un competeneces",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY3MzQ5MDIsImV4cCI6MTYwNjk5NDEwMiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.fdTb_Wuz9xLIMFul71GCLH3UeH_Iarq9sXA9us37CgdvSpYfErES5vQ65kPDxJueMVkaYVHNRDZkgcSdU-UdTbm1LThCn3pinS6ibJgeZM9DCaJrmObBsxxa1Lj00QuRIMz4GdiXcie1WYfK2mVLVy-bSN5z15k3_3LR5IT66y8f2qUeU6LE1z6v9-6OxchiIJSn7ydNOhd8ehaoTX_573abFXnievxjvrJYz35CJKZ2kr8B-xZKwmdAb4GoauiMWvJhsFi-x0vLyOGzl-I0BvsAjocszMCWvsmT9Pr_qPlovToLiBQshRVwoYhsXC78sozgAbNiymyBHxcpx6RJBoii4o9HukKSIMi1AnUZbC93mngofMCkGOdxuc4EWuwb7xu0FQcRXUo8pn6qcgdrocKLhZw25ecgA_CnDNgsBK0Yh9I_EPjPnXLdNlNwtIU2R1ZGbQGxxgP4U9bQmPgRap-w0VZj2Ik6vEy9fDuvkpKA4UXaeF5b_j6OLo6HhITIYYZ2NRhSHB_AruZDqh9c7SJFFZmej4mV-Nq6Wd4Zvw-hKF_XtoNL_T3o43oI38ZO9ngDMtWbLVV_EbW4dtG7TWGzfgD0sJIzDPTqGWnjECSo7hhgXbCSFe7ic6V1c4FTIoW7u_ilHKl9vvRcKuE7MYwTJsuTfOBneN6_sLjfMVI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"libelle\": \"my put competence\",\n    \"descriptif\":\"je test le put competence\",\n    \"status\":false,\n        \"niveau\":[\n      { \n          \"id\":40,\n          \"libelle\":\"html\",\n          \"critereEvalution\":\"par test\",\n          \"groupeAction\":\"first 1\",\n          \"staus\":false\n      }\n      \n        ]\n        \n }\n    \n    \n    \n  \n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/competences/34",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"competences",
+								"34"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Groupe Competence",
+			"item": [
+				{
+					"name": "lister les groupes de competences",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MjYxMDksImV4cCI6MTYwNzA4NTMwOSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WD1tEmIPQIWvUYb4_77wuvHn31JtFbBtlQUybcnPSnMpIESgQHAZzgmxUTI3yzEzluTRxL-slXlHTqZTpb0OE7MlQJLD_UhDjCkIEHDAJwyJXjgXszAvX7XX5MRJOmU3_PLaZn19falNkUwgtaw8KoIcm_9FbFhDC_Hobaoidonx-YtcmR7H2Tetc0nNMtC1B6MspTQOtQfB0RIBezn6Gz1xfpo4I3Ed-97n-onJ9_ljcPvjPCnVr7nLjGRKnkw2m95NTkoj-RNPiopFVEPdext_FCWTF2CtrBFtL3HrqEiZ4E8MwHBHyBh4b2BO23zQiIOFjWUg0K_bFXVo_fZmVmyRhDAbus-u2rau6HAp45dUs0AXFUXexOhM74RiaT-MT7FWOiUMFqlqdo6V6CIZjzgmn9CW14INH6N9IvjGSQudc8lqpgXvofX1UwkdzonVTC1Tn8B3CYmdgbM1R1WvGUhCABvkgan2i2DtDhxVnmJysdkpw57iapZpb-3ZsG79LM3yau0NTg1vfmhI5d9zTRaisz-hDGWu_OcoDdT8UQobzcpI4SadIfL7sNBLmDO9dmCQS1RGMhf-KhpE7CNemV94VkWvmGIS3ugNLk_vIccWBGPonXegvuF9efYmaoU-1uLrtVPbIF5_B4KO6JkgG0DRAh3klc2bY9gzm97URQU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/grpecompetences",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"grpecompetences"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add groupe competence",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY0Njg2MzQsImV4cCI6MTYwNjU1NTAzNCwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.YIiuEsjQC351pukujx5311yJC-poZmau2sES4GW4mQ3NGocmKjP4OpyV69jWPvbsq4KLq4YtUTQwS3bCyAskyaTHpMNch-1FsbN8GpuvDahdYE9Ldpy2Lp4jymzCEq5ualrBGVL8oTa7LfjN5ZiDq9vrRMc1mt1g459nx3LQK0V9jdOCvyg8Q70yoEfsvYeqXrsDyB_HhynnLi48ELUu74PHggajh_oJvYmcULWYpXzGUDCXXeUINwMB5JgzxMEWL-GRWQ6SJEk1Y0IT9bAz19ihjv3U-OV03ojhAIkFHda2rVdJBrKYL4yiKhoeT9TwE_nDB-AnuBONoSWvlQHYrJ8dvCYfElTHgzGGLuGssTbt_b8Ey6EB2XRVTcuqwet_l4R6Ljjp6BwrinmZk5ucIvijJPnkTG0wV1AaAiHtsYEUDvO8HLk4aAUs6XjXJ7fLS4DTQaY_wUnewBsKcsbcFpqGle8pRi4NURRQSQsjb2QSCAfZktB9w3aDoZxIjPzUims6P-25hmP7LXpMiGlstyPuhV2yXY-krxLm2gBizmOJDjQZBNRY91UL4DDTrzecZRBwN_3X08klPM1fYBquSnD72J1446tVEiGMCtMr_5PoJXVBH9Y87MdYzoEMSQnLq9eZPNI69-U5ZNOjoU8SX5OFtPoJIaKadm31WwrksW8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"libelle\": \"sxgw,xv,qsugd\",\n    \"descriptif\":\"my qcsa   tysc\",\n    \"status\":false,\n    \"competence\":[\n        {\n        \"libelle\":\"portie4hbf4r\",\n        \"niveau\":[\n      {\n          \"libelle\":\"hv\",\n          \"critereEvalution\":\"bjsf 1\",\n          \"groupeAction\":\"frffff 1\",\n          \"staus\":false\n      },\n      {\n          \"libelle\":\"vdfvdf\",\n          \"critereEvalution\":\"qsdze 3\",\n          \"groupeAction\":\" sdffezq 3\",\n          \"status\":false\n      },\n      {\n          \"libelle\":\"sdfsdfsdsdc\",\n          \"critereEvalution\":\"mvlfk 3\",\n          \"groupeAction\":\" jsblsdnùc 3\",\n          \"status\":false\n      }\n  ]\n        \n         }\n    ]\n    \n    \n  \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/grpecompetences",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"grpecompetences"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lister un groupe de competence par id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY3MzQ5MDIsImV4cCI6MTYwNjk5NDEwMiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.fdTb_Wuz9xLIMFul71GCLH3UeH_Iarq9sXA9us37CgdvSpYfErES5vQ65kPDxJueMVkaYVHNRDZkgcSdU-UdTbm1LThCn3pinS6ibJgeZM9DCaJrmObBsxxa1Lj00QuRIMz4GdiXcie1WYfK2mVLVy-bSN5z15k3_3LR5IT66y8f2qUeU6LE1z6v9-6OxchiIJSn7ydNOhd8ehaoTX_573abFXnievxjvrJYz35CJKZ2kr8B-xZKwmdAb4GoauiMWvJhsFi-x0vLyOGzl-I0BvsAjocszMCWvsmT9Pr_qPlovToLiBQshRVwoYhsXC78sozgAbNiymyBHxcpx6RJBoii4o9HukKSIMi1AnUZbC93mngofMCkGOdxuc4EWuwb7xu0FQcRXUo8pn6qcgdrocKLhZw25ecgA_CnDNgsBK0Yh9I_EPjPnXLdNlNwtIU2R1ZGbQGxxgP4U9bQmPgRap-w0VZj2Ik6vEy9fDuvkpKA4UXaeF5b_j6OLo6HhITIYYZ2NRhSHB_AruZDqh9c7SJFFZmej4mV-Nq6Wd4Zvw-hKF_XtoNL_T3o43oI38ZO9ngDMtWbLVV_EbW4dtG7TWGzfgD0sJIzDPTqGWnjECSo7hhgXbCSFe7ic6V1c4FTIoW7u_ilHKl9vvRcKuE7MYwTJsuTfOBneN6_sLjfMVI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/grpecompetences/18",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"grpecompetences",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifier un groupe de competences",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MjYxMDksImV4cCI6MTYwNzA4NTMwOSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WD1tEmIPQIWvUYb4_77wuvHn31JtFbBtlQUybcnPSnMpIESgQHAZzgmxUTI3yzEzluTRxL-slXlHTqZTpb0OE7MlQJLD_UhDjCkIEHDAJwyJXjgXszAvX7XX5MRJOmU3_PLaZn19falNkUwgtaw8KoIcm_9FbFhDC_Hobaoidonx-YtcmR7H2Tetc0nNMtC1B6MspTQOtQfB0RIBezn6Gz1xfpo4I3Ed-97n-onJ9_ljcPvjPCnVr7nLjGRKnkw2m95NTkoj-RNPiopFVEPdext_FCWTF2CtrBFtL3HrqEiZ4E8MwHBHyBh4b2BO23zQiIOFjWUg0K_bFXVo_fZmVmyRhDAbus-u2rau6HAp45dUs0AXFUXexOhM74RiaT-MT7FWOiUMFqlqdo6V6CIZjzgmn9CW14INH6N9IvjGSQudc8lqpgXvofX1UwkdzonVTC1Tn8B3CYmdgbM1R1WvGUhCABvkgan2i2DtDhxVnmJysdkpw57iapZpb-3ZsG79LM3yau0NTg1vfmhI5d9zTRaisz-hDGWu_OcoDdT8UQobzcpI4SadIfL7sNBLmDO9dmCQS1RGMhf-KhpE7CNemV94VkWvmGIS3ugNLk_vIccWBGPonXegvuF9efYmaoU-1uLrtVPbIF5_B4KO6JkgG0DRAh3klc2bY9gzm97URQU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \n    \"option\":\"add\",\n    \"competences\": [\n        {\"id\": 44},\n        {\"libelle\":\"trigger\"}\n        \n     ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/grpecompetences/8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"grpecompetences",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lister les competence des groupes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MjYxMDksImV4cCI6MTYwNzA4NTMwOSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WD1tEmIPQIWvUYb4_77wuvHn31JtFbBtlQUybcnPSnMpIESgQHAZzgmxUTI3yzEzluTRxL-slXlHTqZTpb0OE7MlQJLD_UhDjCkIEHDAJwyJXjgXszAvX7XX5MRJOmU3_PLaZn19falNkUwgtaw8KoIcm_9FbFhDC_Hobaoidonx-YtcmR7H2Tetc0nNMtC1B6MspTQOtQfB0RIBezn6Gz1xfpo4I3Ed-97n-onJ9_ljcPvjPCnVr7nLjGRKnkw2m95NTkoj-RNPiopFVEPdext_FCWTF2CtrBFtL3HrqEiZ4E8MwHBHyBh4b2BO23zQiIOFjWUg0K_bFXVo_fZmVmyRhDAbus-u2rau6HAp45dUs0AXFUXexOhM74RiaT-MT7FWOiUMFqlqdo6V6CIZjzgmn9CW14INH6N9IvjGSQudc8lqpgXvofX1UwkdzonVTC1Tn8B3CYmdgbM1R1WvGUhCABvkgan2i2DtDhxVnmJysdkpw57iapZpb-3ZsG79LM3yau0NTg1vfmhI5d9zTRaisz-hDGWu_OcoDdT8UQobzcpI4SadIfL7sNBLmDO9dmCQS1RGMhf-KhpE7CNemV94VkWvmGIS3ugNLk_vIccWBGPonXegvuF9efYmaoU-1uLrtVPbIF5_B4KO6JkgG0DRAh3klc2bY9gzm97URQU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/grpecompetences/competences",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"grpecompetences",
+								"competences"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lister le competence par groupe",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MjYxMDksImV4cCI6MTYwNzA4NTMwOSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WD1tEmIPQIWvUYb4_77wuvHn31JtFbBtlQUybcnPSnMpIESgQHAZzgmxUTI3yzEzluTRxL-slXlHTqZTpb0OE7MlQJLD_UhDjCkIEHDAJwyJXjgXszAvX7XX5MRJOmU3_PLaZn19falNkUwgtaw8KoIcm_9FbFhDC_Hobaoidonx-YtcmR7H2Tetc0nNMtC1B6MspTQOtQfB0RIBezn6Gz1xfpo4I3Ed-97n-onJ9_ljcPvjPCnVr7nLjGRKnkw2m95NTkoj-RNPiopFVEPdext_FCWTF2CtrBFtL3HrqEiZ4E8MwHBHyBh4b2BO23zQiIOFjWUg0K_bFXVo_fZmVmyRhDAbus-u2rau6HAp45dUs0AXFUXexOhM74RiaT-MT7FWOiUMFqlqdo6V6CIZjzgmn9CW14INH6N9IvjGSQudc8lqpgXvofX1UwkdzonVTC1Tn8B3CYmdgbM1R1WvGUhCABvkgan2i2DtDhxVnmJysdkpw57iapZpb-3ZsG79LM3yau0NTg1vfmhI5d9zTRaisz-hDGWu_OcoDdT8UQobzcpI4SadIfL7sNBLmDO9dmCQS1RGMhf-KhpE7CNemV94VkWvmGIS3ugNLk_vIccWBGPonXegvuF9efYmaoU-1uLrtVPbIF5_B4KO6JkgG0DRAh3klc2bY9gzm97URQU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/grpecompetences/competences",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"grpecompetences",
+								"competences"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Cm",
+			"item": [
+				{
+					"name": "Cm user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "tags",
+			"item": [
+				{
+					"name": "afficher les tags",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MDUxNTUsImV4cCI6MTYwNzA2NDM1NSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WWPCw3lzw4yx6IT1YR5fBb8kqngW_87yW63dIIxtm783lrxBsHlHRX25xkaHmdnsVXdwzsWMLkEsifl10OmJz2F_4GZuKrl1atQbMjN8SbsJIpB4B6mRlQVYx4h2FY2a7kewXHATx2taMV7Yc8WyJf1jn5N3f8vl4kShXkEtY7FAlM1SH4W1-6gMR7pO81tLjG_o0HNiB9lR7lOYtmiXCFBcL3dDqxo42kr2cHnsSH5T5Y5-3sP2VgMpO_EMKd_QbG4fRFNG9shmUogzQV9j_PjOw5CPJGArpFrY-yyzBgfmwANYjPdtjSmnc1UlvD_Xt75-3o72CIrko8ov3awsfy6iSrR5NNUen2iYhiwRGlQ0ODcfXy5BWa0bSQ57EmcrHEs2LXQZCKu6qWJOTqVM53xjOm0AG6x6RyEs6Q6x4aOgBCPoywGgRj9kODmZj3mwk_r5g0J-aDP5We8quR8vE4zrMz0X66r0Ev-2Lhh7WbEiXOOW9oHhrpDhQlo532-Tc0urmj23rsjLmzCTxgVx-nwQ_NvQmG_tr4lb2sxxIu2RcgDXjVs8E8aPEaJcq_EB3NLSZ_84Y0eb5YrWdBRWJ0cBgxnPkk-_EMC7ap_xFlzD6FXaORYnG_GNB3GrkDsiRJBWVnNN_9aSUoxekc5Qpcbh5zqB60sxjGn9uvtpjQg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/tags",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"tags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "afficher un tags",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY3MjYxODYsImV4cCI6MTYwNjk4NTM4Niwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.NapitzoO9is8F91rZVF__Y1S57EdsjHFdBd_i92Ylg-lOayGulqh-QIBCxev_9fvTl6jObwxuXi1PelJhfU-EPLO9XGi8-302M3xoxB6sAzQzR3ohXcM92askjSKdjkwGGmxQOtJEmkn2SG85pocPjxxfJADNDs0ipxjn3io8-rE1nUyYECqm00bmxOXapHB5Ra13r2IcPJVDkZTyrNKy6oNPgwc-hBMqGmVBpIiz6JmxhrOv4NdYldu1wqwWbcoXUL21qJyQUtb2UB-7FVyODt2UnnoSMmZ87pGrG--HjoXqwIv5hIpMKkCvOaZfpeIHY9NxqlEJeE17_siWnHMuLsPS_qVHvjw3vg23H3DDP_IG2O_J9LCWadXZcwSPqgdru1dCa1MMYo6hgXNYqOuzZlG77ZnOxzxuf5fEQqJUUN1CdMkaW-j5vjzO_ADoQR_uOd2M53wd6TpSIlcecobDzju8mOthaXdcoDtdZKnkwiUnJ8E1-5ah3wNgU_pYKWHHoBZAOITd5LGV_NH1P27q8JR39eSpJXvvSJnOE9V-jvKAB7zFmrvocY3p-4Yh8ag9WZNW-hWI4vMl7khGmEfr-eQ7J6Tl1GnaV3xtccLFZcmYTGraH7KKziGszhaBNlU7gs4SWt6Z9h_OHViEcTCHh8ee7ApZE9AKvKPjJVDp2k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/tags/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"tags",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifier un tag",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY3MjYxODYsImV4cCI6MTYwNjk4NTM4Niwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.NapitzoO9is8F91rZVF__Y1S57EdsjHFdBd_i92Ylg-lOayGulqh-QIBCxev_9fvTl6jObwxuXi1PelJhfU-EPLO9XGi8-302M3xoxB6sAzQzR3ohXcM92askjSKdjkwGGmxQOtJEmkn2SG85pocPjxxfJADNDs0ipxjn3io8-rE1nUyYECqm00bmxOXapHB5Ra13r2IcPJVDkZTyrNKy6oNPgwc-hBMqGmVBpIiz6JmxhrOv4NdYldu1wqwWbcoXUL21qJyQUtb2UB-7FVyODt2UnnoSMmZ87pGrG--HjoXqwIv5hIpMKkCvOaZfpeIHY9NxqlEJeE17_siWnHMuLsPS_qVHvjw3vg23H3DDP_IG2O_J9LCWadXZcwSPqgdru1dCa1MMYo6hgXNYqOuzZlG77ZnOxzxuf5fEQqJUUN1CdMkaW-j5vjzO_ADoQR_uOd2M53wd6TpSIlcecobDzju8mOthaXdcoDtdZKnkwiUnJ8E1-5ah3wNgU_pYKWHHoBZAOITd5LGV_NH1P27q8JR39eSpJXvvSJnOE9V-jvKAB7zFmrvocY3p-4Yh8ag9WZNW-hWI4vMl7khGmEfr-eQ7J6Tl1GnaV3xtccLFZcmYTGraH7KKziGszhaBNlU7gs4SWt6Z9h_OHViEcTCHh8ee7ApZE9AKvKPjJVDp2k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"libelle\": \"testTag\",\n    \"descriptif\": \"test descriptifs\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/tags/29",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"tags",
+								"29"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "groups tag",
+			"item": [
+				{
+					"name": "afficher les groupes tag",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY3MjYxODYsImV4cCI6MTYwNjk4NTM4Niwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.NapitzoO9is8F91rZVF__Y1S57EdsjHFdBd_i92Ylg-lOayGulqh-QIBCxev_9fvTl6jObwxuXi1PelJhfU-EPLO9XGi8-302M3xoxB6sAzQzR3ohXcM92askjSKdjkwGGmxQOtJEmkn2SG85pocPjxxfJADNDs0ipxjn3io8-rE1nUyYECqm00bmxOXapHB5Ra13r2IcPJVDkZTyrNKy6oNPgwc-hBMqGmVBpIiz6JmxhrOv4NdYldu1wqwWbcoXUL21qJyQUtb2UB-7FVyODt2UnnoSMmZ87pGrG--HjoXqwIv5hIpMKkCvOaZfpeIHY9NxqlEJeE17_siWnHMuLsPS_qVHvjw3vg23H3DDP_IG2O_J9LCWadXZcwSPqgdru1dCa1MMYo6hgXNYqOuzZlG77ZnOxzxuf5fEQqJUUN1CdMkaW-j5vjzO_ADoQR_uOd2M53wd6TpSIlcecobDzju8mOthaXdcoDtdZKnkwiUnJ8E1-5ah3wNgU_pYKWHHoBZAOITd5LGV_NH1P27q8JR39eSpJXvvSJnOE9V-jvKAB7zFmrvocY3p-4Yh8ag9WZNW-hWI4vMl7khGmEfr-eQ7J6Tl1GnaV3xtccLFZcmYTGraH7KKziGszhaBNlU7gs4SWt6Z9h_OHViEcTCHh8ee7ApZE9AKvKPjJVDp2k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/grptags",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"grptags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "afficher un groupe de tag",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY3MjYxODYsImV4cCI6MTYwNjk4NTM4Niwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.NapitzoO9is8F91rZVF__Y1S57EdsjHFdBd_i92Ylg-lOayGulqh-QIBCxev_9fvTl6jObwxuXi1PelJhfU-EPLO9XGi8-302M3xoxB6sAzQzR3ohXcM92askjSKdjkwGGmxQOtJEmkn2SG85pocPjxxfJADNDs0ipxjn3io8-rE1nUyYECqm00bmxOXapHB5Ra13r2IcPJVDkZTyrNKy6oNPgwc-hBMqGmVBpIiz6JmxhrOv4NdYldu1wqwWbcoXUL21qJyQUtb2UB-7FVyODt2UnnoSMmZ87pGrG--HjoXqwIv5hIpMKkCvOaZfpeIHY9NxqlEJeE17_siWnHMuLsPS_qVHvjw3vg23H3DDP_IG2O_J9LCWadXZcwSPqgdru1dCa1MMYo6hgXNYqOuzZlG77ZnOxzxuf5fEQqJUUN1CdMkaW-j5vjzO_ADoQR_uOd2M53wd6TpSIlcecobDzju8mOthaXdcoDtdZKnkwiUnJ8E1-5ah3wNgU_pYKWHHoBZAOITd5LGV_NH1P27q8JR39eSpJXvvSJnOE9V-jvKAB7zFmrvocY3p-4Yh8ag9WZNW-hWI4vMl7khGmEfr-eQ7J6Tl1GnaV3xtccLFZcmYTGraH7KKziGszhaBNlU7gs4SWt6Z9h_OHViEcTCHh8ee7ApZE9AKvKPjJVDp2k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/grptags/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"grptags",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifier un groupe tag",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY3MjYxODYsImV4cCI6MTYwNjk4NTM4Niwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.NapitzoO9is8F91rZVF__Y1S57EdsjHFdBd_i92Ylg-lOayGulqh-QIBCxev_9fvTl6jObwxuXi1PelJhfU-EPLO9XGi8-302M3xoxB6sAzQzR3ohXcM92askjSKdjkwGGmxQOtJEmkn2SG85pocPjxxfJADNDs0ipxjn3io8-rE1nUyYECqm00bmxOXapHB5Ra13r2IcPJVDkZTyrNKy6oNPgwc-hBMqGmVBpIiz6JmxhrOv4NdYldu1wqwWbcoXUL21qJyQUtb2UB-7FVyODt2UnnoSMmZ87pGrG--HjoXqwIv5hIpMKkCvOaZfpeIHY9NxqlEJeE17_siWnHMuLsPS_qVHvjw3vg23H3DDP_IG2O_J9LCWadXZcwSPqgdru1dCa1MMYo6hgXNYqOuzZlG77ZnOxzxuf5fEQqJUUN1CdMkaW-j5vjzO_ADoQR_uOd2M53wd6TpSIlcecobDzju8mOthaXdcoDtdZKnkwiUnJ8E1-5ah3wNgU_pYKWHHoBZAOITd5LGV_NH1P27q8JR39eSpJXvvSJnOE9V-jvKAB7zFmrvocY3p-4Yh8ag9WZNW-hWI4vMl7khGmEfr-eQ7J6Tl1GnaV3xtccLFZcmYTGraH7KKziGszhaBNlU7gs4SWt6Z9h_OHViEcTCHh8ee7ApZE9AKvKPjJVDp2k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n     \"libelle\": \"groupeTagTest1\",\n    \"status\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/grptags/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"grptags",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ajouter un groupe de tags",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY3MzQ5MDIsImV4cCI6MTYwNjk5NDEwMiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.fdTb_Wuz9xLIMFul71GCLH3UeH_Iarq9sXA9us37CgdvSpYfErES5vQ65kPDxJueMVkaYVHNRDZkgcSdU-UdTbm1LThCn3pinS6ibJgeZM9DCaJrmObBsxxa1Lj00QuRIMz4GdiXcie1WYfK2mVLVy-bSN5z15k3_3LR5IT66y8f2qUeU6LE1z6v9-6OxchiIJSn7ydNOhd8ehaoTX_573abFXnievxjvrJYz35CJKZ2kr8B-xZKwmdAb4GoauiMWvJhsFi-x0vLyOGzl-I0BvsAjocszMCWvsmT9Pr_qPlovToLiBQshRVwoYhsXC78sozgAbNiymyBHxcpx6RJBoii4o9HukKSIMi1AnUZbC93mngofMCkGOdxuc4EWuwb7xu0FQcRXUo8pn6qcgdrocKLhZw25ecgA_CnDNgsBK0Yh9I_EPjPnXLdNlNwtIU2R1ZGbQGxxgP4U9bQmPgRap-w0VZj2Ik6vEy9fDuvkpKA4UXaeF5b_j6OLo6HhITIYYZ2NRhSHB_AruZDqh9c7SJFFZmej4mV-Nq6Wd4Zvw-hKF_XtoNL_T3o43oI38ZO9ngDMtWbLVV_EbW4dtG7TWGzfgD0sJIzDPTqGWnjECSo7hhgXbCSFe7ic6V1c4FTIoW7u_ilHKl9vvRcKuE7MYwTJsuTfOBneN6_sLjfMVI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"libelle\": \"groupeTag12\",\n            \"tags\": [\n               {\"libelle\":\"tag1\",\n               \"descriptif\":\"descriptif1\"\n               },\n               {\"libelle\":\"tags14\",\n               \"descriptif\":\"descriptif1\"\n               },\n               {\"libelle\":\"tag2\"\n               ,\n               \"descriptif\":\"descriptif1\"\n               }\n            ],\n            \"status\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/grptags",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"grptags"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "groupe",
+			"item": [
+				{
+					"name": "afficher les groupe",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MDUxNTUsImV4cCI6MTYwNzA2NDM1NSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WWPCw3lzw4yx6IT1YR5fBb8kqngW_87yW63dIIxtm783lrxBsHlHRX25xkaHmdnsVXdwzsWMLkEsifl10OmJz2F_4GZuKrl1atQbMjN8SbsJIpB4B6mRlQVYx4h2FY2a7kewXHATx2taMV7Yc8WyJf1jn5N3f8vl4kShXkEtY7FAlM1SH4W1-6gMR7pO81tLjG_o0HNiB9lR7lOYtmiXCFBcL3dDqxo42kr2cHnsSH5T5Y5-3sP2VgMpO_EMKd_QbG4fRFNG9shmUogzQV9j_PjOw5CPJGArpFrY-yyzBgfmwANYjPdtjSmnc1UlvD_Xt75-3o72CIrko8ov3awsfy6iSrR5NNUen2iYhiwRGlQ0ODcfXy5BWa0bSQ57EmcrHEs2LXQZCKu6qWJOTqVM53xjOm0AG6x6RyEs6Q6x4aOgBCPoywGgRj9kODmZj3mwk_r5g0J-aDP5We8quR8vE4zrMz0X66r0Ev-2Lhh7WbEiXOOW9oHhrpDhQlo532-Tc0urmj23rsjLmzCTxgVx-nwQ_NvQmG_tr4lb2sxxIu2RcgDXjVs8E8aPEaJcq_EB3NLSZ_84Y0eb5YrWdBRWJ0cBgxnPkk-_EMC7ap_xFlzD6FXaORYnG_GNB3GrkDsiRJBWVnNN_9aSUoxekc5Qpcbh5zqB60sxjGn9uvtpjQg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/groupes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"groupes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8000/api/admin/tags",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MDUxNTUsImV4cCI6MTYwNzA2NDM1NSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WWPCw3lzw4yx6IT1YR5fBb8kqngW_87yW63dIIxtm783lrxBsHlHRX25xkaHmdnsVXdwzsWMLkEsifl10OmJz2F_4GZuKrl1atQbMjN8SbsJIpB4B6mRlQVYx4h2FY2a7kewXHATx2taMV7Yc8WyJf1jn5N3f8vl4kShXkEtY7FAlM1SH4W1-6gMR7pO81tLjG_o0HNiB9lR7lOYtmiXCFBcL3dDqxo42kr2cHnsSH5T5Y5-3sP2VgMpO_EMKd_QbG4fRFNG9shmUogzQV9j_PjOw5CPJGArpFrY-yyzBgfmwANYjPdtjSmnc1UlvD_Xt75-3o72CIrko8ov3awsfy6iSrR5NNUen2iYhiwRGlQ0ODcfXy5BWa0bSQ57EmcrHEs2LXQZCKu6qWJOTqVM53xjOm0AG6x6RyEs6Q6x4aOgBCPoywGgRj9kODmZj3mwk_r5g0J-aDP5We8quR8vE4zrMz0X66r0Ev-2Lhh7WbEiXOOW9oHhrpDhQlo532-Tc0urmj23rsjLmzCTxgVx-nwQ_NvQmG_tr4lb2sxxIu2RcgDXjVs8E8aPEaJcq_EB3NLSZ_84Y0eb5YrWdBRWJ0cBgxnPkk-_EMC7ap_xFlzD6FXaORYnG_GNB3GrkDsiRJBWVnNN_9aSUoxekc5Qpcbh5zqB60sxjGn9uvtpjQg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"libelle\": \"addPost\",\n            \"descriptif\": \"test addpost\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/tags",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"tags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "afficher un groupe",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MDUxNTUsImV4cCI6MTYwNzA2NDM1NSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WWPCw3lzw4yx6IT1YR5fBb8kqngW_87yW63dIIxtm783lrxBsHlHRX25xkaHmdnsVXdwzsWMLkEsifl10OmJz2F_4GZuKrl1atQbMjN8SbsJIpB4B6mRlQVYx4h2FY2a7kewXHATx2taMV7Yc8WyJf1jn5N3f8vl4kShXkEtY7FAlM1SH4W1-6gMR7pO81tLjG_o0HNiB9lR7lOYtmiXCFBcL3dDqxo42kr2cHnsSH5T5Y5-3sP2VgMpO_EMKd_QbG4fRFNG9shmUogzQV9j_PjOw5CPJGArpFrY-yyzBgfmwANYjPdtjSmnc1UlvD_Xt75-3o72CIrko8ov3awsfy6iSrR5NNUen2iYhiwRGlQ0ODcfXy5BWa0bSQ57EmcrHEs2LXQZCKu6qWJOTqVM53xjOm0AG6x6RyEs6Q6x4aOgBCPoywGgRj9kODmZj3mwk_r5g0J-aDP5We8quR8vE4zrMz0X66r0Ev-2Lhh7WbEiXOOW9oHhrpDhQlo532-Tc0urmj23rsjLmzCTxgVx-nwQ_NvQmG_tr4lb2sxxIu2RcgDXjVs8E8aPEaJcq_EB3NLSZ_84Y0eb5YrWdBRWJ0cBgxnPkk-_EMC7ap_xFlzD6FXaORYnG_GNB3GrkDsiRJBWVnNN_9aSUoxekc5Qpcbh5zqB60sxjGn9uvtpjQg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/groupes/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"groupes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ajouter un groupe",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MDUxNTUsImV4cCI6MTYwNzA2NDM1NSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WWPCw3lzw4yx6IT1YR5fBb8kqngW_87yW63dIIxtm783lrxBsHlHRX25xkaHmdnsVXdwzsWMLkEsifl10OmJz2F_4GZuKrl1atQbMjN8SbsJIpB4B6mRlQVYx4h2FY2a7kewXHATx2taMV7Yc8WyJf1jn5N3f8vl4kShXkEtY7FAlM1SH4W1-6gMR7pO81tLjG_o0HNiB9lR7lOYtmiXCFBcL3dDqxo42kr2cHnsSH5T5Y5-3sP2VgMpO_EMKd_QbG4fRFNG9shmUogzQV9j_PjOw5CPJGArpFrY-yyzBgfmwANYjPdtjSmnc1UlvD_Xt75-3o72CIrko8ov3awsfy6iSrR5NNUen2iYhiwRGlQ0ODcfXy5BWa0bSQ57EmcrHEs2LXQZCKu6qWJOTqVM53xjOm0AG6x6RyEs6Q6x4aOgBCPoywGgRj9kODmZj3mwk_r5g0J-aDP5We8quR8vE4zrMz0X66r0Ev-2Lhh7WbEiXOOW9oHhrpDhQlo532-Tc0urmj23rsjLmzCTxgVx-nwQ_NvQmG_tr4lb2sxxIu2RcgDXjVs8E8aPEaJcq_EB3NLSZ_84Y0eb5YrWdBRWJ0cBgxnPkk-_EMC7ap_xFlzD6FXaORYnG_GNB3GrkDsiRJBWVnNN_9aSUoxekc5Qpcbh5zqB60sxjGn9uvtpjQg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nomGroupe\": \"groupe 1\",\n    \"status\": 0,\n    \"apprenants\": [\n        {\"id\":53},\n        {\"id\":54},\n        {\"id\":55}\n    ],\n    \"formateurs\": [\n        {\"id\":59},\n        {\"id\":60}\n    ],\n    \"promo\": 1\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/groupes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"groupes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete apprenant on groupe",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MjYxMDksImV4cCI6MTYwNzA4NTMwOSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WD1tEmIPQIWvUYb4_77wuvHn31JtFbBtlQUybcnPSnMpIESgQHAZzgmxUTI3yzEzluTRxL-slXlHTqZTpb0OE7MlQJLD_UhDjCkIEHDAJwyJXjgXszAvX7XX5MRJOmU3_PLaZn19falNkUwgtaw8KoIcm_9FbFhDC_Hobaoidonx-YtcmR7H2Tetc0nNMtC1B6MspTQOtQfB0RIBezn6Gz1xfpo4I3Ed-97n-onJ9_ljcPvjPCnVr7nLjGRKnkw2m95NTkoj-RNPiopFVEPdext_FCWTF2CtrBFtL3HrqEiZ4E8MwHBHyBh4b2BO23zQiIOFjWUg0K_bFXVo_fZmVmyRhDAbus-u2rau6HAp45dUs0AXFUXexOhM74RiaT-MT7FWOiUMFqlqdo6V6CIZjzgmn9CW14INH6N9IvjGSQudc8lqpgXvofX1UwkdzonVTC1Tn8B3CYmdgbM1R1WvGUhCABvkgan2i2DtDhxVnmJysdkpw57iapZpb-3ZsG79LM3yau0NTg1vfmhI5d9zTRaisz-hDGWu_OcoDdT8UQobzcpI4SadIfL7sNBLmDO9dmCQS1RGMhf-KhpE7CNemV94VkWvmGIS3ugNLk_vIccWBGPonXegvuF9efYmaoU-1uLrtVPbIF5_B4KO6JkgG0DRAh3klc2bY9gzm97URQU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/groupes/2/apprenant/53",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"groupes",
+								"2",
+								"apprenant",
+								"53"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ajouter  un apprenant du group",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"apprenants\": [\n        {\"id\":62}\n    ]\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/groupes/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"groupes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "referentiel",
+			"item": [
+				{
+					"name": "lister les referenciel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MjYxMDksImV4cCI6MTYwNzA4NTMwOSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WD1tEmIPQIWvUYb4_77wuvHn31JtFbBtlQUybcnPSnMpIESgQHAZzgmxUTI3yzEzluTRxL-slXlHTqZTpb0OE7MlQJLD_UhDjCkIEHDAJwyJXjgXszAvX7XX5MRJOmU3_PLaZn19falNkUwgtaw8KoIcm_9FbFhDC_Hobaoidonx-YtcmR7H2Tetc0nNMtC1B6MspTQOtQfB0RIBezn6Gz1xfpo4I3Ed-97n-onJ9_ljcPvjPCnVr7nLjGRKnkw2m95NTkoj-RNPiopFVEPdext_FCWTF2CtrBFtL3HrqEiZ4E8MwHBHyBh4b2BO23zQiIOFjWUg0K_bFXVo_fZmVmyRhDAbus-u2rau6HAp45dUs0AXFUXexOhM74RiaT-MT7FWOiUMFqlqdo6V6CIZjzgmn9CW14INH6N9IvjGSQudc8lqpgXvofX1UwkdzonVTC1Tn8B3CYmdgbM1R1WvGUhCABvkgan2i2DtDhxVnmJysdkpw57iapZpb-3ZsG79LM3yau0NTg1vfmhI5d9zTRaisz-hDGWu_OcoDdT8UQobzcpI4SadIfL7sNBLmDO9dmCQS1RGMhf-KhpE7CNemV94VkWvmGIS3ugNLk_vIccWBGPonXegvuF9efYmaoU-1uLrtVPbIF5_B4KO6JkgG0DRAh3klc2bY9gzm97URQU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/referenciels",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"referenciels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lister un referenciel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MjYxMDksImV4cCI6MTYwNzA4NTMwOSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WD1tEmIPQIWvUYb4_77wuvHn31JtFbBtlQUybcnPSnMpIESgQHAZzgmxUTI3yzEzluTRxL-slXlHTqZTpb0OE7MlQJLD_UhDjCkIEHDAJwyJXjgXszAvX7XX5MRJOmU3_PLaZn19falNkUwgtaw8KoIcm_9FbFhDC_Hobaoidonx-YtcmR7H2Tetc0nNMtC1B6MspTQOtQfB0RIBezn6Gz1xfpo4I3Ed-97n-onJ9_ljcPvjPCnVr7nLjGRKnkw2m95NTkoj-RNPiopFVEPdext_FCWTF2CtrBFtL3HrqEiZ4E8MwHBHyBh4b2BO23zQiIOFjWUg0K_bFXVo_fZmVmyRhDAbus-u2rau6HAp45dUs0AXFUXexOhM74RiaT-MT7FWOiUMFqlqdo6V6CIZjzgmn9CW14INH6N9IvjGSQudc8lqpgXvofX1UwkdzonVTC1Tn8B3CYmdgbM1R1WvGUhCABvkgan2i2DtDhxVnmJysdkpw57iapZpb-3ZsG79LM3yau0NTg1vfmhI5d9zTRaisz-hDGWu_OcoDdT8UQobzcpI4SadIfL7sNBLmDO9dmCQS1RGMhf-KhpE7CNemV94VkWvmGIS3ugNLk_vIccWBGPonXegvuF9efYmaoU-1uLrtVPbIF5_B4KO6JkgG0DRAh3klc2bY9gzm97URQU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/referenciels/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"referenciels",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ajouter referenciel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MjYxMDksImV4cCI6MTYwNzA4NTMwOSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WD1tEmIPQIWvUYb4_77wuvHn31JtFbBtlQUybcnPSnMpIESgQHAZzgmxUTI3yzEzluTRxL-slXlHTqZTpb0OE7MlQJLD_UhDjCkIEHDAJwyJXjgXszAvX7XX5MRJOmU3_PLaZn19falNkUwgtaw8KoIcm_9FbFhDC_Hobaoidonx-YtcmR7H2Tetc0nNMtC1B6MspTQOtQfB0RIBezn6Gz1xfpo4I3Ed-97n-onJ9_ljcPvjPCnVr7nLjGRKnkw2m95NTkoj-RNPiopFVEPdext_FCWTF2CtrBFtL3HrqEiZ4E8MwHBHyBh4b2BO23zQiIOFjWUg0K_bFXVo_fZmVmyRhDAbus-u2rau6HAp45dUs0AXFUXexOhM74RiaT-MT7FWOiUMFqlqdo6V6CIZjzgmn9CW14INH6N9IvjGSQudc8lqpgXvofX1UwkdzonVTC1Tn8B3CYmdgbM1R1WvGUhCABvkgan2i2DtDhxVnmJysdkpw57iapZpb-3ZsG79LM3yau0NTg1vfmhI5d9zTRaisz-hDGWu_OcoDdT8UQobzcpI4SadIfL7sNBLmDO9dmCQS1RGMhf-KhpE7CNemV94VkWvmGIS3ugNLk_vIccWBGPonXegvuF9efYmaoU-1uLrtVPbIF5_B4KO6JkgG0DRAh3klc2bY9gzm97URQU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"libelle\": \"libelle 1\",\n  \"presentation\": \"string 1\",\n  \"programme\": \"string 1\",\n  \"criteradmission\": \"string 1\",\n  \"critereEvaluation\": \"string 1\",\n  \"status\": false,\n  \"groupeCompetence\": [\n    {\n      \"libelle\": \"competence groupe string\",\n      \"descriptif\": \" competence string\",\n      \"status\": false\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/referenciels",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"referenciels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifier referenciel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MjYxMDksImV4cCI6MTYwNzA4NTMwOSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WD1tEmIPQIWvUYb4_77wuvHn31JtFbBtlQUybcnPSnMpIESgQHAZzgmxUTI3yzEzluTRxL-slXlHTqZTpb0OE7MlQJLD_UhDjCkIEHDAJwyJXjgXszAvX7XX5MRJOmU3_PLaZn19falNkUwgtaw8KoIcm_9FbFhDC_Hobaoidonx-YtcmR7H2Tetc0nNMtC1B6MspTQOtQfB0RIBezn6Gz1xfpo4I3Ed-97n-onJ9_ljcPvjPCnVr7nLjGRKnkw2m95NTkoj-RNPiopFVEPdext_FCWTF2CtrBFtL3HrqEiZ4E8MwHBHyBh4b2BO23zQiIOFjWUg0K_bFXVo_fZmVmyRhDAbus-u2rau6HAp45dUs0AXFUXexOhM74RiaT-MT7FWOiUMFqlqdo6V6CIZjzgmn9CW14INH6N9IvjGSQudc8lqpgXvofX1UwkdzonVTC1Tn8B3CYmdgbM1R1WvGUhCABvkgan2i2DtDhxVnmJysdkpw57iapZpb-3ZsG79LM3yau0NTg1vfmhI5d9zTRaisz-hDGWu_OcoDdT8UQobzcpI4SadIfL7sNBLmDO9dmCQS1RGMhf-KhpE7CNemV94VkWvmGIS3ugNLk_vIccWBGPonXegvuF9efYmaoU-1uLrtVPbIF5_B4KO6JkgG0DRAh3klc2bY9gzm97URQU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n            \n            \"id\": 3,\n            \"libelle\": \"libelle 1\",\n            \"presentation\": \"string 1\",\n            \"programme\": \"string 1\",\n            \"criteradmission\": \"string 1\",\n            \"critereEvaluation\": \"string 1\",\n            \"status\": false,\n            \"groupeCompetence\": [\n                {  \"id\": 24\n                },{  \"id\": 19\n                },{\n                    \"libelle\": \"st44ring\",\n                    \"descriptif\": \"44ggt\"\n                }\n            ]\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/referenciels/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"referenciels",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "afficher groupe de competence et competence",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MjYxMDksImV4cCI6MTYwNzA4NTMwOSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WD1tEmIPQIWvUYb4_77wuvHn31JtFbBtlQUybcnPSnMpIESgQHAZzgmxUTI3yzEzluTRxL-slXlHTqZTpb0OE7MlQJLD_UhDjCkIEHDAJwyJXjgXszAvX7XX5MRJOmU3_PLaZn19falNkUwgtaw8KoIcm_9FbFhDC_Hobaoidonx-YtcmR7H2Tetc0nNMtC1B6MspTQOtQfB0RIBezn6Gz1xfpo4I3Ed-97n-onJ9_ljcPvjPCnVr7nLjGRKnkw2m95NTkoj-RNPiopFVEPdext_FCWTF2CtrBFtL3HrqEiZ4E8MwHBHyBh4b2BO23zQiIOFjWUg0K_bFXVo_fZmVmyRhDAbus-u2rau6HAp45dUs0AXFUXexOhM74RiaT-MT7FWOiUMFqlqdo6V6CIZjzgmn9CW14INH6N9IvjGSQudc8lqpgXvofX1UwkdzonVTC1Tn8B3CYmdgbM1R1WvGUhCABvkgan2i2DtDhxVnmJysdkpw57iapZpb-3ZsG79LM3yau0NTg1vfmhI5d9zTRaisz-hDGWu_OcoDdT8UQobzcpI4SadIfL7sNBLmDO9dmCQS1RGMhf-KhpE7CNemV94VkWvmGIS3ugNLk_vIccWBGPonXegvuF9efYmaoU-1uLrtVPbIF5_B4KO6JkgG0DRAh3klc2bY9gzm97URQU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/adminreferentiels/grpecompetences",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"adminreferentiels",
+								"grpecompetences"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "afficher les groupe de competence d'un referenciel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MjYxMDksImV4cCI6MTYwNzA4NTMwOSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WD1tEmIPQIWvUYb4_77wuvHn31JtFbBtlQUybcnPSnMpIESgQHAZzgmxUTI3yzEzluTRxL-slXlHTqZTpb0OE7MlQJLD_UhDjCkIEHDAJwyJXjgXszAvX7XX5MRJOmU3_PLaZn19falNkUwgtaw8KoIcm_9FbFhDC_Hobaoidonx-YtcmR7H2Tetc0nNMtC1B6MspTQOtQfB0RIBezn6Gz1xfpo4I3Ed-97n-onJ9_ljcPvjPCnVr7nLjGRKnkw2m95NTkoj-RNPiopFVEPdext_FCWTF2CtrBFtL3HrqEiZ4E8MwHBHyBh4b2BO23zQiIOFjWUg0K_bFXVo_fZmVmyRhDAbus-u2rau6HAp45dUs0AXFUXexOhM74RiaT-MT7FWOiUMFqlqdo6V6CIZjzgmn9CW14INH6N9IvjGSQudc8lqpgXvofX1UwkdzonVTC1Tn8B3CYmdgbM1R1WvGUhCABvkgan2i2DtDhxVnmJysdkpw57iapZpb-3ZsG79LM3yau0NTg1vfmhI5d9zTRaisz-hDGWu_OcoDdT8UQobzcpI4SadIfL7sNBLmDO9dmCQS1RGMhf-KhpE7CNemV94VkWvmGIS3ugNLk_vIccWBGPonXegvuF9efYmaoU-1uLrtVPbIF5_B4KO6JkgG0DRAh3klc2bY9gzm97URQU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/referenciels/1/groupe_competences/19/competences",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"referenciels",
+								"1",
+								"groupe_competences",
+								"19",
+								"competences"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "afficher les groupe de competence d'un referenciel Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MjYxMDksImV4cCI6MTYwNzA4NTMwOSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WD1tEmIPQIWvUYb4_77wuvHn31JtFbBtlQUybcnPSnMpIESgQHAZzgmxUTI3yzEzluTRxL-slXlHTqZTpb0OE7MlQJLD_UhDjCkIEHDAJwyJXjgXszAvX7XX5MRJOmU3_PLaZn19falNkUwgtaw8KoIcm_9FbFhDC_Hobaoidonx-YtcmR7H2Tetc0nNMtC1B6MspTQOtQfB0RIBezn6Gz1xfpo4I3Ed-97n-onJ9_ljcPvjPCnVr7nLjGRKnkw2m95NTkoj-RNPiopFVEPdext_FCWTF2CtrBFtL3HrqEiZ4E8MwHBHyBh4b2BO23zQiIOFjWUg0K_bFXVo_fZmVmyRhDAbus-u2rau6HAp45dUs0AXFUXexOhM74RiaT-MT7FWOiUMFqlqdo6V6CIZjzgmn9CW14INH6N9IvjGSQudc8lqpgXvofX1UwkdzonVTC1Tn8B3CYmdgbM1R1WvGUhCABvkgan2i2DtDhxVnmJysdkpw57iapZpb-3ZsG79LM3yau0NTg1vfmhI5d9zTRaisz-hDGWu_OcoDdT8UQobzcpI4SadIfL7sNBLmDO9dmCQS1RGMhf-KhpE7CNemV94VkWvmGIS3ugNLk_vIccWBGPonXegvuF9efYmaoU-1uLrtVPbIF5_B4KO6JkgG0DRAh3klc2bY9gzm97URQU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/referenciels/1/groupe_competences/19/competences",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"referenciels",
+								"1",
+								"groupe_competences",
+								"19",
+								"competences"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "promo",
+			"item": [
+				{
+					"name": "afficher les promo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MjYxMDksImV4cCI6MTYwNzA4NTMwOSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WD1tEmIPQIWvUYb4_77wuvHn31JtFbBtlQUybcnPSnMpIESgQHAZzgmxUTI3yzEzluTRxL-slXlHTqZTpb0OE7MlQJLD_UhDjCkIEHDAJwyJXjgXszAvX7XX5MRJOmU3_PLaZn19falNkUwgtaw8KoIcm_9FbFhDC_Hobaoidonx-YtcmR7H2Tetc0nNMtC1B6MspTQOtQfB0RIBezn6Gz1xfpo4I3Ed-97n-onJ9_ljcPvjPCnVr7nLjGRKnkw2m95NTkoj-RNPiopFVEPdext_FCWTF2CtrBFtL3HrqEiZ4E8MwHBHyBh4b2BO23zQiIOFjWUg0K_bFXVo_fZmVmyRhDAbus-u2rau6HAp45dUs0AXFUXexOhM74RiaT-MT7FWOiUMFqlqdo6V6CIZjzgmn9CW14INH6N9IvjGSQudc8lqpgXvofX1UwkdzonVTC1Tn8B3CYmdgbM1R1WvGUhCABvkgan2i2DtDhxVnmJysdkpw57iapZpb-3ZsG79LM3yau0NTg1vfmhI5d9zTRaisz-hDGWu_OcoDdT8UQobzcpI4SadIfL7sNBLmDO9dmCQS1RGMhf-KhpE7CNemV94VkWvmGIS3ugNLk_vIccWBGPonXegvuF9efYmaoU-1uLrtVPbIF5_B4KO6JkgG0DRAh3klc2bY9gzm97URQU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/promo/apprenants/attente",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"promo",
+								"apprenants",
+								"attente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ajouter promo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MjYxMDksImV4cCI6MTYwNzA4NTMwOSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WD1tEmIPQIWvUYb4_77wuvHn31JtFbBtlQUybcnPSnMpIESgQHAZzgmxUTI3yzEzluTRxL-slXlHTqZTpb0OE7MlQJLD_UhDjCkIEHDAJwyJXjgXszAvX7XX5MRJOmU3_PLaZn19falNkUwgtaw8KoIcm_9FbFhDC_Hobaoidonx-YtcmR7H2Tetc0nNMtC1B6MspTQOtQfB0RIBezn6Gz1xfpo4I3Ed-97n-onJ9_ljcPvjPCnVr7nLjGRKnkw2m95NTkoj-RNPiopFVEPdext_FCWTF2CtrBFtL3HrqEiZ4E8MwHBHyBh4b2BO23zQiIOFjWUg0K_bFXVo_fZmVmyRhDAbus-u2rau6HAp45dUs0AXFUXexOhM74RiaT-MT7FWOiUMFqlqdo6V6CIZjzgmn9CW14INH6N9IvjGSQudc8lqpgXvofX1UwkdzonVTC1Tn8B3CYmdgbM1R1WvGUhCABvkgan2i2DtDhxVnmJysdkpw57iapZpb-3ZsG79LM3yau0NTg1vfmhI5d9zTRaisz-hDGWu_OcoDdT8UQobzcpI4SadIfL7sNBLmDO9dmCQS1RGMhf-KhpE7CNemV94VkWvmGIS3ugNLk_vIccWBGPonXegvuF9efYmaoU-1uLrtVPbIF5_B4KO6JkgG0DRAh3klc2bY9gzm97URQU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"nomPromo\": \"promo\",\n  \"langue\": \"string\",\n  \"titre\": \"string\",\n  \"status\": true,\n  \"description\": \"string\",\n  \"lieu\": \"string\",\n  \"dateFinProvisoire\": \"2020-12-02T17:35:33.846Z\",\n  \"fabrique\": \"string\",\n  \"dateFinReel\": \"2020-12-02T17:35:33.846Z\",\n  \"groupe\": [\n     \n    {\n        \"id\":17,\n       \"nomGroupe\": \"string\",\n       \"status\":false,\n      \"apprenants\": [\n        {\"id\":54}\n      ]\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/promo",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"promo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "afficher les apprenants du groupe principal",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MjYxMDksImV4cCI6MTYwNzA4NTMwOSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WD1tEmIPQIWvUYb4_77wuvHn31JtFbBtlQUybcnPSnMpIESgQHAZzgmxUTI3yzEzluTRxL-slXlHTqZTpb0OE7MlQJLD_UhDjCkIEHDAJwyJXjgXszAvX7XX5MRJOmU3_PLaZn19falNkUwgtaw8KoIcm_9FbFhDC_Hobaoidonx-YtcmR7H2Tetc0nNMtC1B6MspTQOtQfB0RIBezn6Gz1xfpo4I3Ed-97n-onJ9_ljcPvjPCnVr7nLjGRKnkw2m95NTkoj-RNPiopFVEPdext_FCWTF2CtrBFtL3HrqEiZ4E8MwHBHyBh4b2BO23zQiIOFjWUg0K_bFXVo_fZmVmyRhDAbus-u2rau6HAp45dUs0AXFUXexOhM74RiaT-MT7FWOiUMFqlqdo6V6CIZjzgmn9CW14INH6N9IvjGSQudc8lqpgXvofX1UwkdzonVTC1Tn8B3CYmdgbM1R1WvGUhCABvkgan2i2DtDhxVnmJysdkpw57iapZpb-3ZsG79LM3yau0NTg1vfmhI5d9zTRaisz-hDGWu_OcoDdT8UQobzcpI4SadIfL7sNBLmDO9dmCQS1RGMhf-KhpE7CNemV94VkWvmGIS3ugNLk_vIccWBGPonXegvuF9efYmaoU-1uLrtVPbIF5_B4KO6JkgG0DRAh3klc2bY9gzm97URQU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/promos/principal",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"promos",
+								"principal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "afficher referenciel formateur et groupes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MjYxMDksImV4cCI6MTYwNzA4NTMwOSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WD1tEmIPQIWvUYb4_77wuvHn31JtFbBtlQUybcnPSnMpIESgQHAZzgmxUTI3yzEzluTRxL-slXlHTqZTpb0OE7MlQJLD_UhDjCkIEHDAJwyJXjgXszAvX7XX5MRJOmU3_PLaZn19falNkUwgtaw8KoIcm_9FbFhDC_Hobaoidonx-YtcmR7H2Tetc0nNMtC1B6MspTQOtQfB0RIBezn6Gz1xfpo4I3Ed-97n-onJ9_ljcPvjPCnVr7nLjGRKnkw2m95NTkoj-RNPiopFVEPdext_FCWTF2CtrBFtL3HrqEiZ4E8MwHBHyBh4b2BO23zQiIOFjWUg0K_bFXVo_fZmVmyRhDAbus-u2rau6HAp45dUs0AXFUXexOhM74RiaT-MT7FWOiUMFqlqdo6V6CIZjzgmn9CW14INH6N9IvjGSQudc8lqpgXvofX1UwkdzonVTC1Tn8B3CYmdgbM1R1WvGUhCABvkgan2i2DtDhxVnmJysdkpw57iapZpb-3ZsG79LM3yau0NTg1vfmhI5d9zTRaisz-hDGWu_OcoDdT8UQobzcpI4SadIfL7sNBLmDO9dmCQS1RGMhf-KhpE7CNemV94VkWvmGIS3ugNLk_vIccWBGPonXegvuF9efYmaoU-1uLrtVPbIF5_B4KO6JkgG0DRAh3klc2bY9gzm97URQU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/promo/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"promo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "afficher referenciel apprenants formateur",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/promo/1/principal",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"promo",
+								"1",
+								"principal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "formatuer aaaaaaapprenantreferenciels",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/promo/1/referenciels",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"promo",
+								"1",
+								"referenciels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lister les apprenants en attente",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MDY4MjYxMDksImV4cCI6MTYwNzA4NTMwOSwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbWluMSJ9.WD1tEmIPQIWvUYb4_77wuvHn31JtFbBtlQUybcnPSnMpIESgQHAZzgmxUTI3yzEzluTRxL-slXlHTqZTpb0OE7MlQJLD_UhDjCkIEHDAJwyJXjgXszAvX7XX5MRJOmU3_PLaZn19falNkUwgtaw8KoIcm_9FbFhDC_Hobaoidonx-YtcmR7H2Tetc0nNMtC1B6MspTQOtQfB0RIBezn6Gz1xfpo4I3Ed-97n-onJ9_ljcPvjPCnVr7nLjGRKnkw2m95NTkoj-RNPiopFVEPdext_FCWTF2CtrBFtL3HrqEiZ4E8MwHBHyBh4b2BO23zQiIOFjWUg0K_bFXVo_fZmVmyRhDAbus-u2rau6HAp45dUs0AXFUXexOhM74RiaT-MT7FWOiUMFqlqdo6V6CIZjzgmn9CW14INH6N9IvjGSQudc8lqpgXvofX1UwkdzonVTC1Tn8B3CYmdgbM1R1WvGUhCABvkgan2i2DtDhxVnmJysdkpw57iapZpb-3ZsG79LM3yau0NTg1vfmhI5d9zTRaisz-hDGWu_OcoDdT8UQobzcpI4SadIfL7sNBLmDO9dmCQS1RGMhf-KhpE7CNemV94VkWvmGIS3ugNLk_vIccWBGPonXegvuF9efYmaoU-1uLrtVPbIF5_B4KO6JkgG0DRAh3klc2bY9gzm97URQU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/promo/1/apprenents/attente",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"promo",
+								"1",
+								"apprenents",
+								"attente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "groupes apprenants attente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/promos/1/groupes/1/apprenants",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"promos",
+								"1",
+								"groupes",
+								"1",
+								"apprenants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "promo groupes apprenants referenciel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/promos/1/groupes/1/apprenants",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"promos",
+								"1",
+								"groupes",
+								"1",
+								"apprenants"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

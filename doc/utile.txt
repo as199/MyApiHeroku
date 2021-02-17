@@ -1,0 +1,44 @@
+Dans le projet on fait:
+creer un projet symfony : symfony new nomProjet --full
+on creer un fichier docker-compose.yaml et on y met :
+version: '3'
+
+services:
+    database:
+        image: postgres:13-alpine
+        environment:
+            POSTGRES_USER: main
+            POSTGRES_PASSWORD: main
+            POSTGRES_DB: api
+        ports: [5432]
+
+
+on fait:
+
+git add .
+git commit -m 'llll'
+git push -u origin master
+
+heroku login
+heroku create
+
+echo 'web: heroku-php-apache2 public/' > Procfile
+
+heroku addons:create heroku-postgresql:hobby-dev
+
+heroku config:set APP_ENV=prod
+
+puis modifier votre fichier composer puis au niveau de scripts:
+
+ "compile":[
+   "php bin/console doctrine:migration:migrate"
+   ]
+
+
+puis intaller : composer require symfony/apache-pack
+
+git add .
+git commit -m 'trrete'
+git push -u origin master
+
+git push heroku master
