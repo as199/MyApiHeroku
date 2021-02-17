@@ -187,7 +187,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -201,6 +201,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/DataPersister" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -286,7 +287,7 @@
       <workItem from="1612975833121" duration="1343000" />
       <workItem from="1613009922680" duration="593000" />
       <workItem from="1613515452612" duration="14473000" />
-      <workItem from="1613569539799" duration="3221000" />
+      <workItem from="1613569539799" duration="3710000" />
     </task>
     <servers />
   </component>
