@@ -42,7 +42,8 @@ security:
                 guard:
                     authenticators:
                         - lexik_jwt_authentication.jwt_token_authenticator
-                        - App\Security\UserAuthenticator
+                        - App\Security\UtilisateurAuthenticator
+                       # - App\Security\UserAuthenticator
                     entry_point: lexik_jwt_authentication.jwt_token_authenticator
                 logout:
                     path: app_logout

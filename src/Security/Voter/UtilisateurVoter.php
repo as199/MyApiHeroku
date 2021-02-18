@@ -6,7 +6,7 @@ use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Core\Authorization\Voter\Voter;
 use Symfony\Component\Security\Core\User\UserInterface;
 
-class UserVoter extends Voter
+class UtilisateurVoter extends Voter
 {
     protected function supports($attribute, $subject)
     {

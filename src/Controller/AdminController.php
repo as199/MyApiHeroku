@@ -41,6 +41,16 @@ class AdminController extends AbstractController
      */
     private ValidatorPost $validator;
 
+
+    /**
+     * @Route("/home", name="app_home")
+     */
+    public function home()
+    {
+
+        return $this->render('admin/index.html.twig');
+    }
+
     /**
      * AdminController constructor.
      */
